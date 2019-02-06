@@ -1,0 +1,29 @@
+@import "vars.less";
+.menu{
+	width: 100%;
+	box-sizing: border-box;
+	&__check{
+		display: none;
+	}
+	&__label{
+		display: none;
+	}
+}
+.heading li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 1.5em;
+	&>a{
+		display: inline-block;
+		padding: 0.7em 0.3em 0.2em;
+		text-transform: lowercase;
+		color:@menuAColor;
+		&:hover{
+			color: @menuAColorHover;
+		}
+	}
+	&.current-menu-item{
+		border-bottom: 2px solid @menuAColorHover;
+	}
+
+}

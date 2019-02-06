@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'FiraSans';
+    src: url("fonts/FiraSans-Light.woff") format("woff"),
+    url("fonts/FiraSans-Light.ttf") format("truetype"),
+    url("fonts/FiraSans-Light.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'pfb';
+    src: url("fonts/pfbeausanspro-xthin.woff") format("woff"),
+    url("fonts/pfbeausanspro-xthin.ttf") format("truetype"),
+    url("fonts/pfbeausanspro-xthin.svg") format("svg");
+}
+
+@font-face {
+    font-family: 'Acrobat';
+    src: url("fonts/Akrobat-Light.otf") format("opentype"), 
+        url("fonts/AkrobatLight.eot") format("embedded-opentype"),
+         url("fonts/AkrobatLight.woff2") format("woff2"),
+         url("fonts/AkrobatLight.woff") format("woff"),
+         url("fonts/AkrobatLight.ttf") format("truetype"),
+         url("fonts/AkrobatLight.svg#AkrobatLight") format("svg");
+}
+@font-face {
+    font-family:'RobotoBold';
+    src:url("fonts/Roboto-Bold.ttf") format("truetype");
+}

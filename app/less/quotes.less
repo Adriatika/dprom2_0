@@ -1,0 +1,30 @@
+@import "vars.less";
+.quotes{
+	margin-bottom: 1.5em;
+	&:before{
+		display: block;
+		width:100%;
+		box-sizing: border-box;
+		height: 1px;
+		background-color: @borderHeaders;
+		content: '';
+	}
+	&__table{
+		width: 100%;
+		box-sizing: border-box;
+		margin-bottom:0.5em;
+		font-size:1em;
+		color:darken(@iconColor, 10%);
+	}
+	&__price{
+		width:42%;
+	}
+	&__price, &__name{
+		padding:0.5em 0;
+		border-bottom:1px dashed lighten(@borderHeaders,30%);
+	}
+	&__date{
+		font-size: 0.9em;
+		color:lighten(@iconColor, 10%);
+	}
+}

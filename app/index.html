@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dprom.online</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fontStyle.css">
+</head>
+<body>
+		<div class="wrapper">
+		<header class="dpHeader">
+			<div class="headerFirstPart">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/dprom_online.png" alt="Журнал Добывающая промышленность">
+					</a>
+				</div>
+				<div class="infoBlock">
+					<div class="tie">
+						<span class="tie__phone">
+							<svg class="tie__icon">
+								<use xlink:href="svgsprite.svg#num">
+							</svg>
+							+7 (391) 237 - 15 - 37
+						</span>
+						<div class="formWrapper">
+							<input type="checkbox" id="formVision" class="tie__formVision">
+							<form id="searchform" role="search" method="get" class="tie__search">
+								<input type="text" id="searchText" class="tie__searchText"  tabindex="1" placeholder="поиск">
+								<button id="searchsubmit" class="searchSubmit">
+									<svg class="searchSubmit__icon">
+									<use xlink:href="svgsprite.svg#searchIcon">
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="menu">
+						<label for="menuCheck" class="menu__label">
+							<svg>
+								<use xlink:href="svgsprite.svg#burgerMenu">
+							</svg>
+						</label>
+						<input type="checkbox" class="menu__check" id="menuCheck">
+						<ul class="heading">
+							<li class="current-menu-item"><a href="#">Главная</a></li>
+							<li><a href="#">Архив</a></li>
+							<li><a href="#">О проекте</a></li>
+							<li><a href="#">Выставки</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="table">
+			<div class="middle-block">
+				<div class="sidebar-left">
+					<div class="quotes">
+						<table class="quotes__table">
+							<tr class="quotes__row">
+								<td class="quotes__price">62</td>
+								<td class="quotes__name">Доллар</td>
+							</tr>
+							<tr class="quotes__row">
+								<td class="quotes__price">600</td>
+								<td class="quotes__name">Золото</td>
+							</tr>
+							<tr class="quotes__row">
+								<td class="quotes__price">6000</td>
+								<td class="quotes__name">Серебро</td>
+							</tr>
+							<tr class="quotes__row">
+								<td class="quotes__price">3.1</td>
+								<td class="quotes__name">Нефть Brennt</td>
+							</tr>
+							<tr class="quotes__row">
+								<td class="quotes__price">24.56</td>
+								<td class="quotes__name">Алюминий</td>
+							</tr>
+							<tr class="quotes__row">
+								<td class="quotes__price">1756</td>
+								<td class="quotes__name">Медь</td>
+							</tr>
+						</table>
+						<span class="quotes__date">Дата 22.11.1988</span>
+					</div>
+					<div class="events">
+						<h3 class="events__header">Мероприятия</h3>
+						<table class="events__table">
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name">
+									<a href="#">International Mine Water Association Conference 2019, Пермь</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«МАЙНЕКС Дальний Восток», г. Магадан</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«ГеоЕвразия-2019», Москва</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«ГеоЕвразия-2019», Москва</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="newMagazine">
+						<h3 class="widget-title">Свежий номер</h3>
+						<a href="#">
+							<img src="https://picsum.photos/250/400/?random" alt="">
+						</a>
+						<a href="#">Версия online</a>
+						<a href="#">Скачать</a>
+					</div>
+				</div>
+				<main>
+					<div class="dblArcticles">
+						<a href="#" class="dblArcticles__leftBlock">
+							<img src="https://picsum.photos/640/300/?random" alt="someimg" class="dblArcticles__lbImg">
+							<div class="dblArcticles__lbInfo">
+								<div>
+									<span class="dblArcticles__lbData">22.10.2045</span>
+									<span class="dblArcticles__lbHeading">металлы и руды</span>
+								</div>
+								<h2 class="dblArcticles__lbHeader">На хвостохранилище в Бразилии произошла катастрофическая авария </h2>
+								<p class="dblArcticles__lbText">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt harum nostrum ipsam assumenda, corporis, beatae quibusdam eos magni praesentium quia laborum fuga omnis soluta
+								</p>
+							</div>
+						</a>
+						<a href="#" class="dblArcticles__rightBlock">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="dblArcticles__rbImg">
+							<div class="dblArcticles__rbInfo">
+								<div>
+								<span class="dblArcticles__rbData">24.08.2045</span>
+								<span class="dblArcticles__rbHeading">Техника</span>
+								</div>
+								<h2 class="dblArcticles__rbHeader">К 2024 году в РФ намерены увеличить добычу золота на 12% </h2>
+								<p class="dblArcticles__rbText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium.</p>
+							</div>
+						</a>
+					</div>
+					<div class="trplArticles">
+						<a href="#" class="trplArticles__rightBlock">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
+							<div class="trplArticles__info">
+								<div>
+									<span class="trplArticles__data">24.08.2045</span>
+									<span class="trplArticles__heading">Разведка</span>
+								</div>
+								<h2 class="trplArticles__header">К 2024 году в РФ намерены увеличить добычу золота на 12% </h2>
+							</div>
+						</a>
+						<a href="#" class="trplArticles__rightBlock">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
+							<div class="trplArticles__info">
+								<div>
+									<span class="trplArticles__data">24.08.2045</span>
+									<span class="trplArticles__heading">Разведка</span>
+								</div>
+								<h2 class="trplArticles__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+» </h2>
+							</div>
+						</a>
+						<a href="#" class="trplArticles__rightBlock">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
+							<div class="trplArticles__info">
+								<div class="trplArticles__wrapper">
+									<span class="trplArticles__data">24.08.2045</span>
+									<span class="trplArticles__heading">Разведка</span>
+								</div>
+								<h2 class="trplArticles__header">«Воркутауголь» увеличит в 2019 году объём инвестиций на 18%  </h2>
+							</div>
+						</a>
+					</div>
+					<div class="hrBnr">
+						<a href="#" class="hrBnr__anchor">
+							<img src="https://picsum.photos/800/150/?random" alt="myImg" class="hrBnr__img">
+						</a>
+					</div>
+					<div class="hrArticles">
+						<a href="#" class="hrArticle">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
+							<div class="hrArticle__info">
+								<span class="hrArticle__date">30.01.2789</span>
+								<span class="hrArticle__heading">Новости</span>
+								<h3 class="hrArticle__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+» </h3>
+							</div>
+						</a>
+						<a href="#" class="hrArticle">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
+							<div class="hrArticle__info">
+								<span class="hrArticle__date">30.01.2789</span>
+								<span class="hrArticle__heading">Новости</span>
+								<h3 class="hrArticle__header">К 2024 году в РФ намерены увеличить добычу золота на 12%</h3>
+							</div>
+						</a>
+						<a href="#" class="hrArticle">
+							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
+							<div class="hrArticle__info">
+								<span class="hrArticle__date">30.01.2789</span>
+								<span class="hrArticle__heading">Новости</span>
+								<h3 class="hrArticle__header">Качеством, а не количеством: технологии увеличения дебита нефтяных скважин</h3>
+								<p class="hrArticle__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+							</div>
+						</a>
+					</div>
+					<div class="tileNews">
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+						<div class="tileNews__item">
+							<div class="tileNews__meta">
+								<a href="#" class="tileNews__heading">Техника</a>
+								<span class="tileNews__date">22 января</span>
+							</div>
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+						</div>
+					</div>
+				</main>
+				<div class="sidebar-right">
+					<div class="foxy">
+						<a href="#">
+							<img src="https://picsum.photos/450/250/?random" alt="">
+						</a>
+					</div>
+					<div class="widget_categories">
+						<h3 class="widgettitle sidebar_title">
+							Список категорий
+						</h3>
+						<ul>
+							<li><a href="#">Техника</a></li>
+							<li><a href="#">Нефть</a></li>
+							<li><a href="#">Металлы и руды</a></li>
+							<li><a href="#">Разведка</a></li>
+							<li><a href="#">Химия</a></li>
+							<li><a href="#">Минералы</a></li>
+							<li><a href="#">Уголь</a></li>
+							<li><a href="#">Нефтегаз</a></li>
+						</ul>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/75/?random" alt="" class="image">
+						</a>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/75/?random" alt="" class="image">
+						</a>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/75/?random" alt="" class="image">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer class="dpFooter">
+		<div class="wrapper">
+			<div class="interactive">
+				<a href="#" class="interactive__sbscr">Подписаться</a>
+				<div class="interactive__social">
+					<span class="interactive__text">Мы в социальных сетях</span>
+					<ul class="interactive__list">
+						<li><a href="#">Вконтакте</a></li>
+						<li><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+				<div class="interactive__list">
+					<span class="interactive__text">Правила</span>
+					<ul class="interactive__list">
+						<li>
+							<a href="#">Обработка данных</a>
+						</li>
+						<li>
+							<a href="#">Пользовательское соглашение</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<span class="copyright__title">&copy; ООО "ПромоГрупп Медиа", 2016-2019</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

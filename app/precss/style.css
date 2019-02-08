@@ -11,33 +11,36 @@
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
 }
 .dblArcticles__leftBlock {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 3;
-  -webkit-flex-grow: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-  width: 60%;
-  position: relative;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 70%;
   margin-right: 1.5em;
   margin-bottom: 2.5em;
   overflow: hidden;
+  position: relative;
 }
-.dblArcticles__leftBlock::after {
+.dblArcticles__holdIt {
   display: block;
   content: '';
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 80%;
 }
 .dblArcticles__lbImg {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  max-height: 400px;
 }
 .dblArcticles__lbInfo {
   display: -webkit-box;
@@ -75,10 +78,12 @@
 }
 .dblArcticles__lbHeading,
 .dblArcticles__rbHeading {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  text-rendering: optimizeLegibility;
+  vertical-align: middle;
   max-width: 200px;
   border: 1px solid #ffffff;
-  padding: 0.1em 0.3em 0.2em;
+  padding: 0em 0.2em 0.2em;
   margin-left: 1.5em;
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -90,7 +95,9 @@
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 .dblArcticles__lbHeader {
-  font-size: 2em;
+  font-size: 1.5em;
+  text-rendering: optimizeLegibility;
+  line-height: 1.2em;
   font-family: 'RobotoBold', 'Acrobat', sans-serif;
   margin-bottom: 0.5em;
 }
@@ -111,11 +118,11 @@
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 25%;
   min-width: 250px;
   margin-bottom: 2.5em;
   overflow: hidden;
   position: relative;
+  background-color: #284046;
 }
 .dblArcticles__rbInfo {
   display: -webkit-box;
@@ -140,10 +147,10 @@
           box-sizing: border-box;
   padding: 1em 1.5em;
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #284046), color-stop(70%, rgba(40, 60, 70, 0.2)));
-  background-image: -webkit-linear-gradient(bottom, #284046 45%, rgba(40, 60, 70, 0.2) 70%);
-  background-image: -o-linear-gradient(bottom, #284046 45%, rgba(40, 60, 70, 0.2) 70%);
-  background-image: linear-gradient(to top, #284046 45%, rgba(40, 60, 70, 0.2) 70%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(57%, #284046), color-stop(90%, rgba(40, 60, 70, 0.2)));
+  background-image: -webkit-linear-gradient(bottom, #284046 57%, rgba(40, 60, 70, 0.2) 90%);
+  background-image: -o-linear-gradient(bottom, #284046 57%, rgba(40, 60, 70, 0.2) 90%);
+  background-image: linear-gradient(to top, #284046 57%, rgba(40, 60, 70, 0.2) 90%);
 }
 .dblArcticles__rbImg {
   width: 100%;
@@ -156,11 +163,6 @@
 .dblArcticles__rbText,
 .dblArcticles__lbText {
   font-size: 0.8em;
-}
-@media screen and (max-width: 1368px) {
-  .dblArcticles__lbHeader {
-    font-size: 0.9em;
-  }
 }
 
 .dpHeader {
@@ -196,12 +198,11 @@
 .events__header {
   font-size: 1.2em;
   color: #3f4e55;
-  text-transform: uppercase;
   padding-bottom: 0.2em;
   border-bottom: 1px solid #d3b390;
 }
 .events__row {
-  font-size: 1em;
+  font-size: 0.9em;
   display: block;
   padding: 0.5em 0;
   margin-bottom: 1em;
@@ -261,9 +262,18 @@
   height: 1.1em;
 }
 
+.hrArticles {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.hrArticle {
+  display: block;
+}
+
 .hrBnr {
   display: block;
-  min-width: 640px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 2.5em;
@@ -417,7 +427,7 @@ textarea:active {
 }
 .newMagazine > a {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #254d5c;
 }
 .newMagazine > a:hover {
@@ -460,6 +470,9 @@ textarea:active {
 .quotes__name {
   padding: 0.5em 0;
   border-bottom: 1px dashed #f0e5d9;
+}
+.quotes__name {
+  font-size: 0.9em;
 }
 .quotes__date {
   font-size: 0.9em;
@@ -558,13 +571,13 @@ main {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 250px;
+  width: 33%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 28%;
+  min-width: 200px;
   position: relative;
   overflow: hidden;
   margin-bottom: 2.5em;
@@ -612,7 +625,8 @@ main {
   border: 1px solid #ffffff;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  padding: 0.02em 0.2em;
+  padding: 0.02em 0.2em 0.2em;
+  text-transform: lowercase;
 }
 .trplArticles__heading:hover {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -631,7 +645,7 @@ main {
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #3f4e55;
   margin-bottom: 1em;
   padding-bottom: 0.2em;
@@ -639,8 +653,8 @@ main {
 }
 
 .wrapper {
-  max-width: 90%;
-  min-width: 1200px;
+  display: table;
+  max-width: 1200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;

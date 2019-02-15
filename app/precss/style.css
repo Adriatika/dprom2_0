@@ -202,7 +202,7 @@
   border-bottom: 1px solid #d3b390;
 }
 .events__row {
-  font-size: 0.9em;
+  font-size: 0.8em;
   display: block;
   padding: 0.5em 0;
   margin-bottom: 1em;
@@ -260,6 +260,15 @@
   fill: #73868d;
   width: 1em;
   height: 1.1em;
+}
+
+.foxy {
+  width: 100%;
+  max-width: 250px;
+  max-height: 450px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2.5em;
 }
 
 .hrArticles {
@@ -517,6 +526,7 @@ textarea:active {
 }
 .quotes__price {
   width: 42%;
+  font-size: 0.8em;
 }
 .quotes__price,
 .quotes__name {
@@ -524,10 +534,10 @@ textarea:active {
   border-bottom: 1px dashed #f0e5d9;
 }
 .quotes__name {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 .quotes__date {
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #8f9ea4;
 }
 
@@ -691,6 +701,8 @@ main {
   line-height: 1.5em;
   padding-left: 0.5em;
   color: #3f4e55;
+  max-height: 52px;
+  overflow: hidden;
 }
 .tileNews__title:hover {
   color: #96693d;

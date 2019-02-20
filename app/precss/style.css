@@ -54,6 +54,38 @@
   vertical-align: top;
 }
 
+.copyright {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.1em;
+}
+.copyright span {
+  margin-bottom: 1.5em;
+}
+.copyright__text {
+  color: #485156;
+  font-size: 0.9em;
+}
+
 .dblArcticles {
   display: -webkit-box;
   display: -webkit-flex;
@@ -219,6 +251,35 @@
 .dblArcticles__rbText,
 .dblArcticles__lbText {
   font-size: 0.8em;
+}
+
+.dpFooter {
+  display: block;
+  width: 100%;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+.dpFooter > .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1366px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5em 0;
+  margin: 0 auto;
+  width: 95%;
+}
+.dpFooter ul {
+  list-style: none;
 }
 
 .dpHeader {
@@ -509,6 +570,50 @@ textarea {
 input:active,
 textarea:active {
   outline: none;
+}
+
+.interactive {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  font-size: 1.1em;
+}
+.interactive a {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #ffffff;
+  margin-bottom: 1.5em;
+}
+.interactive a:hover {
+  color: #96693d;
+}
+.interactive span {
+  color: #485156;
+}
+.interactive ul {
+  display: inline-block;
+}
+.interactive ul li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+.interactive div {
+  margin-bottom: 1.5em;
 }
 
 .menu {

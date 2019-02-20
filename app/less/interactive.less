@@ -1,0 +1,29 @@
+@import "vars.less";
+.interactive{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow:3; 
+	font-size: @footerFont;
+	& a{
+		transition: 0.3s;
+		color:#ffffff;
+		margin-bottom:1.5em;
+		&:hover{
+			color:@menuAColorHover;
+		}		
+	}
+	& span{
+		color:@menuAColor;
+	}
+	& ul{
+		display: inline-block;
+		& li{
+			display: inline-block;
+			margin-left: 1.5em;
+		}
+	}
+	& div{
+		margin-bottom:1.5em;
+	}
+}

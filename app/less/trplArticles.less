@@ -1,3 +1,4 @@
+@import "vars.less";
 .trplArticles{
 	display: flex;
 	flex-direction: row;
@@ -47,8 +48,18 @@
 		}
 	}
 	&__header{
-		font-size: 1.1em;
+		font-size:@trplHeader;
 		color:rgba(255,255,255,1);
 		margin-top:0.5em;
+	}
+}
+@media all and(max-width:1200px){
+	.trplArticles{
+		&__header{
+			font-size:@trplHeader1200;
+		}
+		&__heading{
+			color:white;
+		}
 	}
 }

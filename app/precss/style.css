@@ -926,6 +926,11 @@ main {
 .tileNews__title:hover {
   color: #96693d;
 }
+@media all and (max-width: 1200px) {
+  .tileNews__item {
+    min-width: 200px;
+  }
+}
 
 .trplArticles {
   display: -webkit-box;

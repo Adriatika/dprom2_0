@@ -48,7 +48,7 @@
 		}
 	}
 	&__header{
-		font-size:@trplHeader;
+		font-size:1.4em;
 		color:rgba(255,255,255,1);
 		margin-top:0.5em;
 	}
@@ -59,10 +59,31 @@
 			justify-content: flex-start;
 		}
 		&__header{
-			font-size:@trplHeader1200;
+			font-size:1.2em;
 		}
 		&__heading{
 			color:white;
+		}
+	}
+}
+@media all and(max-width:1140px){
+	.trplArticles{
+		flex-wrap: wrap;
+		&__rightBlock{
+			width:calc(50% - 1em);
+			flex-grow:none;
+		}
+		&__header{
+			font-size:1.5em;
+		}
+		&__heading{
+			margin-left:1em;
+		}
+		&__rightBlock:last-of-type{
+			width: 100%;
+			max-width: none;
+			max-height:125px;
+			overflow: hidden;
 		}
 	}
 }

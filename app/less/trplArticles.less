@@ -16,6 +16,9 @@
 			margin-right: 0;
 		}
 	}
+	&__rightBlock:hover &__img{
+			transform: scale(1.1);
+		}
 	&__img{
 		width: 100%;
 	}
@@ -30,7 +33,7 @@
 		padding:1em 1.5em;
 		top:0;
 		left:0;
-		background-image: linear-gradient(to top, rgba(40,64,70,0.7) 30%, rgba(40,64,70,0.1) 70%, rgba(40,64,70,0.7) 100%);
+		background-image: linear-gradient(to top, rgba(40,64,70,0.9) 30%, rgba(40,64,70,0.3) 70%, rgba(40,64,70,0.8) 100%);
 	}
 	&__data, &__heading{
 		max-width: 100px;
@@ -76,14 +79,62 @@
 		&__header{
 			font-size:1.5em;
 		}
+		&__img{
+			width: auto;
+		}
 		&__heading{
 			margin-left:1em;
 		}
 		&__rightBlock:last-of-type{
-			width: 100%;
+			display: block;
+			position: relative;
+			width:100%;
 			max-width: none;
 			max-height:125px;
 			overflow: hidden;
+			padding: 0.5em;
+			> .trplArticles__img{
+				display: inline-block;
+				width: 100px;
+				height: 66px;
+				margin-right: 1em;	
+			}
+			> .trplArticles__info{
+				display:inline-block;
+				width:calc(100% - 100px - 2em);
+				position: static;
+				background-image: none;
+				padding:0;
+				vertical-align:top;
+			}
+			.trplArticles__header{
+				font-size: 1.2em;
+			}
+			 .trplArticles__header, .trplArticles__data{
+				color:@menuAColor;
+			}
+			.trplArticles__heading{
+				color:@menuAColor;
+				border:1px solid @menuAColor;
+				&:hover{
+					color:;
+				}
+			}
+			&:hover .trplArticles__header{
+				color:@menuAColorHover;
+			}
+			&:hover .trplArticles__img{
+				transform: none;
+			}
+			&::after{
+				display: block;
+				position: absolute;
+				bottom:0;
+				content: '';
+				height: 1px;
+				width: 100%;
+				background-image: linear-gradient(to left, rgba(40,64,70,.8) 60%,rgba(240,230,205,.5));
+			}
 		}
 	}
 }

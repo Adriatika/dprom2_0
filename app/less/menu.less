@@ -13,6 +13,10 @@
 	display: inline-block;
 	list-style: none;
 	margin-right: 1.5em;
+	&:hover{
+		transition:color;
+		border-bottom: 2px solid @menuAColorHover;
+	}
 	&>a{
 		display: inline-block;
 		padding: 0.7em 0.3em 0.2em;
@@ -20,10 +24,24 @@
 		color:@menuAColor;
 		&:hover{
 			color: @menuAColorHover;
+			transition:color 0.5s;
 		}
 	}
 	&.current-menu-item{
 		border-bottom: 2px solid @menuAColorHover;
 	}
-
+}
+@media all and(max-width: 960px){
+	.menu{
+		float: right;
+		text-align: right;
+		max-width:100%;
+	}
+	.heading li{
+		margin-right:0;
+		margin-left:5%;
+		&:first-of-type{
+			margin-left:0;
+		}
+	}
 }

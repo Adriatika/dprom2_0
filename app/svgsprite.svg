@@ -15,4 +15,9 @@
 		<rect y="31" width="50" height="2"/>
 		<rect y="45" width="50" height="2"/>
 	</symbol>
+	<symbol id="burgerMenu2" x="0px" y="0px" viewBox="0 0 60 32" preserveAspectRatio="meet">
+		<rect y="3" width="60" height="5"/>
+		<rect y="17" width="40" height="5"/>
+		<rect y="31" width="60" height="5"/>
+	</symbol>
 </svg>

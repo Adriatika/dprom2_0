@@ -47,15 +47,10 @@
 }
 
 .bottomSidebarLeft {
-  display: table-cell;
+  display: none;
   width: calc(200px + 2em);
   padding-right: 1.5em;
   vertical-align: top;
-}
-@media all and (max-width: 1200px) {
-  .bottomSidebarLeft {
-    display: none;
-  }
 }
 
 .bottomSidebarRight {
@@ -455,7 +450,6 @@
   display: table;
   width: 100%;
   margin: 0 auto 2em;
-  background: rgba(240, 230, 205, 0.1);
   padding-bottom: 10px;
   margin-bottom: 2em;
 }
@@ -480,6 +474,15 @@
   padding-top: 1em;
   padding-left: 2.5em;
   width: calc(71.5% - 5.5em);
+}
+@media all and (max-width: 1366px) {
+  .dpHeader {
+    font-size: 0.9em;
+  }
+  .logo {
+    width: 250px;
+    height: 45px;
+  }
 }
 @media all and (max-width: 1200px) {
   .headerFirstPart {
@@ -623,13 +626,13 @@
 }
 .hrArticle__info {
   display: inline-block;
-  max-width: calc(100% - 260px);
+  max-width: calc(100% - 265px);
   vertical-align: top;
 }
 .hrArticle__header {
   font-size: 1.2em;
   color: #3f4e55;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
 }
 .hrArticle__text {
   display: block;
@@ -644,7 +647,7 @@
   -webkit-border-radius: 3px;
           border-radius: 3px;
   text-transform: lowercase;
-  padding: 0 0.1em 0.1em;
+  padding: 0 0.2em 0.1em 0.1em;
   border: 1px solid #6a8490;
 }
 .hrArticle__heading:hover {
@@ -655,9 +658,11 @@
 .hrBnr {
   display: block;
   width: 100%;
+  max-width: 728px;
+  max-height: 92px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 2.5em;
+  margin: 0 auto 2.5em auto;
   overflow: hidden;
   text-align: center;
 }
@@ -856,6 +861,11 @@ textarea:active {
 .heading li.current-menu-item {
   border-bottom: 2px solid #96693d;
 }
+@media all and (max-width: 1366px) {
+  .heading li a {
+    padding: 0;
+  }
+}
 @media all and (max-width: 960px) {
   .menu {
     float: right;
@@ -930,7 +940,7 @@ textarea:active {
 }
 
 .sector2 {
-  display: table;
+  display: block;
   margin: 0 auto;
 }
 .sector2row {
@@ -1054,9 +1064,8 @@ main {
 }
 
 .tileWrapper {
-  display: table-cell;
+  display: block;
   vertical-align: top;
-  max-width: 800px;
 }
 .tileNews {
   display: -webkit-box;

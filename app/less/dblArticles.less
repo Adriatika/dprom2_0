@@ -203,22 +203,33 @@
 }
 @media all and(max-width:960px){
 	.dblArcticles{
+		flex-direction: row;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		&__leftBlock{
+			flex-grow:3;
+			margin-right: 0;
+		}
 		&__rightBlock{
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			width:calc(100% - 500px - 0.5em);
+			min-width:170px;
+			max-width:200px;
 			height:375px;
+			flex-grow:1;
 			&::after{
 				display: none;
 			}	
 		}
 		&__rbInfo{
-			max-width: none;
-			width:100%;
+			max-width:250px;
+
 		}
 		&__rbImg{
 			margin: 0;
+			width: 100%;
+			margin-bottom:0.5em;
 			&:hover{
 				box-shadow:none;
 			}
@@ -227,7 +238,57 @@
 			width: 100%;
 		}
 	}
-	.miranda{
-
+	.foxy{
+		display: flex;
+		flex-grow: 1;
+	}
+}
+@media all and(max-width: 768px){
+	.dblArcticles{
+		justify-content: space-around;
+		&__rightBlock{
+			flex-grow:3;
+			width: 100%; 
+			max-width:100%;
+			position: relative;
+			overflow: hidden;
+		}
+		&__leftBlock:hover img{
+			transform:none;
+		}
+		&__rbImg{
+			width: 100%;
+			margin-bottom: 0;
+		}
+		&__rbInfo{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			position:absolute;
+			top:0;
+			left:0;
+			max-width:100%;
+			width: 100%;
+			box-sizing: border-box;
+			height: 375px;
+			overflow: hidden;
+			padding:1em 1.5em;
+			color:white;
+		    background-image: linear-gradient(to top, rgba(40,64,70,0.9) 30%, rgba(0,0,0,0) 70%, rgba(40,64,70,0.9)100%);
+		}
+		&__rbData{
+			color:#ffffff;
+		}
+		&__rbHeading{
+			color:#ffffff;
+			border:1px solid #ffffff;
+			&:hover{
+				color: rgba(255,255,255,0.8);
+				border:1px solid rgba(255,255,255,0.8);
+			}
+		}
+		&__rbInfo:hover h2{
+			color: rgba(255,255,255,0.8);
+		}
 	}
 }

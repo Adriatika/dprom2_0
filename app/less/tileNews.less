@@ -2,6 +2,7 @@
 .tileWrapper{
 	display: block;
 	vertical-align:top;
+	margin-left:25%;
 }
 .tileNews{
 	display:flex;
@@ -71,10 +72,26 @@
 		}
 	}
 }
+@media all and(max-width: 1280px){
+	.tileWrapper{
+		margin-left: 0;
+	}
+}
 @media all and(max-width:1200px){
 	 .tileNews{
 	 	&__item{
 	 		min-width: 200px;
 	 	}
 	 }
+}
+@media all and(max-width: 960px){
+	.tileNews__item{
+		width: calc(50% - 2.5em);
+	}
+}
+@media all and(max-width: 768px){
+	.tileNews__item{
+		margin-right: 0;
+	}
+
 }

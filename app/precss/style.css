@@ -126,6 +126,8 @@
     display: none;
     position: absolute;
     width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     left: 0;
     padding-top: 1.5em;
     z-index: 100;
@@ -425,7 +427,7 @@
     font-size: 2.1em;
   }
   .dblArcticles__rbHeader {
-    font-size: 1.8em;
+    font-size: 1.4em;
   }
 }
 @media all and (max-width: 1200px) {
@@ -598,6 +600,9 @@
   .dblArcticles__leftBlock {
     max-height: 250px;
   }
+  .dblArcticles__lbHeader {
+    font-size: 1.4em;
+  }
   .dblArcticles__rightBlock {
     -webkit-box-flex: 3;
     -webkit-flex-grow: 3;
@@ -657,6 +662,9 @@
   }
   .dblArcticles__rbData {
     color: #ffffff;
+  }
+  .dblArcticles__rbHeader {
+    font-size: 1.3em;
   }
   .dblArcticles__rbHeading {
     color: #ffffff;

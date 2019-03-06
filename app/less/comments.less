@@ -1,0 +1,55 @@
+@import "vars.less";
+
+.comments{
+	width:100%;
+	box-sizing:border-box;
+	&__radio{
+		display: none;
+	}
+	&__cmntTgl{
+		display: inline-block;
+		color:@downAnchor;
+		font-size:1em;
+		padding:0.3em 0.7em;
+		border-top:1px solid @menuAColor;
+		border-left:1px solid @menuAColor;
+		border-right:1px solid @menuAColor;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		background-color:@iconColor;
+	}
+	& #fbComment:checked + &__cmntTgl{
+		color:@downAnchor;
+		border-top:1px solid @menuAColor;
+		border-left:1px solid @menuAColor;
+		border-right:1px solid @menuAColor;
+		background-color:#ffffff;
+	}
+	& #vkComment:checked + &__cmntTgl{
+		color:@downAnchor;
+		border-top:1px solid @menuAColor;
+		border-left:1px solid @menuAColor;
+		border-right:1px solid @menuAColor;
+		background-color:#ffffff;
+	}
+	&__commentTab{
+		display:none;
+		width:100%;
+		box-sizing:border-box;
+		margin:1em 0 1.5em 0;
+	}
+	& #fbComment:checked ~ div#blockFb{
+		display: block;
+	}
+	& #vkComment:checked ~ div#blockVk{
+		display: block;
+	}
+	
+}
+@media screen and(max-width:1140px){
+	.comments{
+		&__cmntTgl{
+			font-size:0.9em;
+		}
+	}
+}

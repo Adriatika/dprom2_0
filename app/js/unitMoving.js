@@ -15,6 +15,7 @@ function invMiranda(){
 	var caty = document.querySelector('.widget_categories');
 	if(adfox){
 		for( i = 0; i<2; i++){
+			adfox[i].style.marginRight = "0";
 			if(adfox[i]){
 				if(i==0){
 					sidebar.insertBefore(adfox[i],caty);

@@ -3,6 +3,7 @@
 	display:block;
 	width:100%;
 	box-sizing: border-box;
+	padding-right:calc(100% - 640px);
 	& h1{
 		display: block;
 		font-family: "RobotoBold",'Acrobat', sans-serif;
@@ -157,6 +158,17 @@
 	& table{
 		max-width: 100%;
 		overflow-x: scroll;
+		& td{
+			padding:0.5em;
+			border:1px solid @ArticleDate;
+		}
+		& thead{
+			text-align: center;
+			font-weight: bolder;
+			background-color:@ArticleDate;
+			color:black;
+			text-rendering:  optimizeLegibility;
+		}
 	}
 }
 
@@ -164,6 +176,12 @@
 	.singleArticle{
 		width:80%;
 		margin-right: 20%;
+		padding-right:2em;
+	}
+}
+@media all and(max-width:1200px){
+	.singleArticle{
+		padding-right:0;
 	}
 }
 @media all and(max-width:960px){

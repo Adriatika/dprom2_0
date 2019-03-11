@@ -31,7 +31,7 @@
 	&__header{
 		font-size: 1.2em;
 		color:@headersColor;
-		margin-bottom:0em;
+		margin-bottom:0.5em;
 	}
 	&__text{
 		display: block;
@@ -51,6 +51,15 @@
 			color:@headersColor;
 			border:1px solid @headersColor;
 		}
+	}
+	&__date, &__city{
+		display:inline-block;
+		font-size: 0.8em;
+		color:lighten(@headersColor, 20%);
+		border-radius:3px;
+		text-transform: lowercase;
+		padding:0 0.2em 0.1em 0.1em;
+		border:1px solid lighten(@headersColor, 20%);
 	}
 }
 @media all and(max-width: 576px){

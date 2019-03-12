@@ -9,12 +9,21 @@
 	<script src="jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+		<div class="darkMenu">
+			<div class="wrapper">
+				<ul class="darkList">
+					<li><a href="#">Дикие хомяки снова нападают</a></li>
+					<li><a href="#">Роснефть будет шить одежду арестантам</a></li>
+					<li><a href="#">В России легализовали коноплю</a></li>
+				</ul>
+			</div>
+		</div>	
 		<div class="wrapper">
 		<header class="dpHeader">
 			<div class="headerFirstPart">
 				<div class="logo">
 					<a href="index.html">
-						<img src="img/dprom_online.png" alt="Журнал Добывающая промышленность">
+						<img src="img/lgDProm.png" alt="Журнал Добывающая промышленность">
 					</a>
 				</div>
 				<div class="infoBlock">
@@ -46,7 +55,7 @@
 						<input type="checkbox" class="menu__check" id="menuCheck">
 						<ul class="heading">
 							<li class="current-menu-item"><a href="#">Главная</a></li>
-							<li><a href="#">Архив</a></li>
+							<li><a href="taxonomy-series.html">Архив</a></li>
 							<li><a href="page.html">О проекте</a></li>
 							<li><a href="post-events.html">Мероприятия</a></li>
 						</ul>
@@ -237,6 +246,7 @@
 							<li class="cat-item"><a href="#">Нефтегаз</a></li>
 						</ul>
 					</div>
+					<div class="holdIt"></div>
 					<div class="widget_media_image">
 						<a href="#">
 							<img src="https://picsum.photos/250/125/?random" alt="" class="image">
@@ -411,5 +421,7 @@
 		</div>
 	</footer>
 	<script src="js/unitMoving.js"></script>
+	<script src="js/svg4everybody.js"></script>
+	<script>svg4everybody();</script>
 </body>
 </html>

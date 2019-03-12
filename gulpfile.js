@@ -2,7 +2,8 @@ let gulp    		= require('gulp'),
 	less    		= require('gulp-less'),
 	browserSync 	= require('browser-sync'),
 	concat 			= require('gulp-concat'),
-	uglify 			= require('gulp-uglifyjs'),
+	uglify 			= require('gulp-uglify'),
+	pipeline		= require('readable-stream').pipeline;
 	csso 			= require('gulp-csso'),
 	rename 			= require('gulp-rename'),
 	del     		= require('del'),
@@ -42,10 +43,11 @@ function handleError(err) {
 
 
 gulp.task('scripts', function(){
-	return  gulp.src("app/prejs/**/*.js")
-	.pipe(concat("libs.min.js"))
-	.pipe(uglify())
-	.pipe(gulp.dest("app/js"))
+	return pipeline(
+	gulp.src("app/prejs/**/*.js"),
+	uglify(),
+	gulp.dest("app/js")
+		);
 });
 
 gulp.task('browser-sync', function(){

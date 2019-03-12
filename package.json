@@ -21,7 +21,11 @@
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprites": "^4.1.2",
+    "gulp-uglify": "^3.0.2",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "readable-stream": "^3.2.0"
   }
 }

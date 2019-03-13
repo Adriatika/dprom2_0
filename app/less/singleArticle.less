@@ -254,3 +254,50 @@
 		}
 	}
 }
+@media all and(max-width:320px){
+	.singleArticle{
+		& h1{
+			font-size:1.5em;
+			max-width:300px;
+		}
+		& h2{
+			font-size:1.4em;
+			max-width:300px;
+		}
+		& h3{
+			font-size:1.3em;
+			max-width:300px;
+		}
+		& h4{
+			font-size:1.2em;
+			max-width:300px;
+		}
+		& p{
+			max-width:300px;
+			font-size:1em;
+		}
+		& img.alignright, & img.alignleft, &img.aligncenter,
+		& img.alignnone, & figure.alignright, & figure.aligncenter,
+		& figure.alignnone, & figure.alignleft{
+			max-width:300px;
+			min-width:0;
+			margin: 0 auto 1.5em;
+		}
+		& table{
+			max-width:300px;
+			overflow:scroll;
+		}
+		& blockquote, & ul li, & a, & ul li>a, & ol li{
+			font-size:1em;
+		}
+		&__ft .sharing{
+			&__explanation{
+				font-size:1.1em;
+			}
+			& a{
+				width:20px;
+				height:20px;
+			}
+		}
+	}
+}

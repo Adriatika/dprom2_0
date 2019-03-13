@@ -76,3 +76,18 @@
 		}
 	}
 }
+@media all and(max-width:320px){
+	.darkMenu{
+		& .darkList{
+			& li{
+				display: block;
+				& a{
+					padding:0.2em 0 0.2em 10px;
+					&::before{
+						top:11px;
+					}
+				}
+			}
+		}
+	}
+}

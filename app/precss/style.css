@@ -877,6 +877,8 @@
   padding-top: 1em;
   padding-left: 2.5em;
   width: calc(71.5% - 5.5em);
+  padding-bottom: 3px;
+  vertical-align: bottom;
 }
 @media all and (max-width: 1366px) {
   .dpHeader {
@@ -884,7 +886,7 @@
   }
   .logo {
     width: 250px;
-    height: 45px;
+    max-height: 100%;
   }
 }
 @media all and (max-width: 1200px) {

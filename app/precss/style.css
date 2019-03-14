@@ -1021,8 +1021,8 @@
 .foxy {
   display: inline-block;
   width: 100%;
-  max-width: 250px;
-  max-height: 375px;
+  width: 250px;
+  height: 375px;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1031,6 +1031,13 @@
 @media all and (max-width: 960px) {
   .foxy {
     margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
+}
+@media all and (max-width: 768px) {
+  .foxy {
+    margin-right: 0em;
+    margin-left: 0em;
   }
 }
 @media all and (max-width: 320px) {
@@ -1585,6 +1592,9 @@ textarea:active {
 }
 .newMagazine img {
   max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #0b1538;
 }
 .newMagazine p,
 .newMagazine span {

@@ -1458,21 +1458,6 @@ textarea:active {
   margin-right: 1.5em;
   border-bottom: 2px solid transparent;
 }
-.heading li .sub-menu {
-  display: none;
-  background-color: #ffffff;
-  min-width: 300px;
-  position: absolute;
-  left: 0;
-  z-index: 100;
-}
-.heading li .sub-menu li {
-  display: block;
-  padding: 0.5em 0.5em;
-}
-.heading li .sub-menu li:hover {
-  border-bottom: 2px solid transparent;
-}
 .heading li:hover {
   -webkit-transition: color;
   -o-transition: color;
@@ -1514,9 +1499,6 @@ textarea:active {
   }
   .heading li:first-of-type {
     margin-left: 0;
-  }
-  .heading li:hover .sub-menu {
-    display: none;
   }
 }
 @media all and (max-width: 576px) {

@@ -50,9 +50,8 @@
 		}
 	}
 	&__info{
-		background-color: white;
-		
-		height:260px;
+		background-color: lighten(@backMenuColor,30%);
+		height:220px;
 	}
 	&__heading{
 		margin-bottom:0.2em;
@@ -62,7 +61,7 @@
 		padding-top:1em;
 		padding-left:0.5em;
 		padding-bottom:0.5em;
-		background: white;
+		background-color: lighten(@backMenuColor,30%);
 		&:hover{
 			color:@menuAColorHover;
 		}
@@ -112,6 +111,10 @@
 		max-width:300px;
 		min-width:250px;
 		margin-right:3px;
+		& img{
+			width: 100%;
+			
+		}
 	}
 }
 @media all and(max-width:480px){

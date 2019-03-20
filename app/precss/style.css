@@ -1724,6 +1724,9 @@ main > p a:hover {
 .popular__item:not(:last-of-type) {
   border-bottom: 1px solid rgba(199, 207, 210, 0.8);
 }
+.popular__item:hover h3 {
+  color: #533c08;
+}
 .popular__date {
   display: table-cell;
   padding-right: 1em;

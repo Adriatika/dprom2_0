@@ -5,11 +5,12 @@
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom:2.5em;
-	background-color: lighten(@backMenuColor,30%);
+	background-image:linear-gradient(to right, lighten(@backMenuColor,30%) 80%, transparent 100%);
 	&__item{
 		display:table;
 		width:100%;
-		max-width: 100%;
+		position: relative;
+		max-width:100%;
 		box-sizing:border-box;
 		padding:1em 1.5em 0.8em;
 		&:not(:last-of-type){
@@ -19,20 +20,11 @@
 			color:@mainHeaderColor;
 		}
 	}
-	&__date{
-		display:table-cell;
-		padding-right: 1em;
-		font-size: 0.9em;
-		color:@ArticleDate;
-		width:70px;
-	}
-	&__info{
-		display:table-cell;
-	}
 	&__header{
 		display:inline-block;
 		font-size: 1.1em;
 		color:@headersColor;
+		margin-right: 1.5em;
 	}
 	&__heading{
 		display:inline-block;	

@@ -14,6 +14,31 @@
   padding: 1.5em 0 2.5em;
   white-space: nowrap;
 }
+.archive__title {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  font-size: 1.4em;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.3em;
+  font-weight: bold;
+  max-width: 100%;
+  color: #3f4e55;
+}
+.archive__title::after {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  content: '';
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(80%, #faf6f2), to(transparent));
+  background-image: -webkit-linear-gradient(left, #faf6f2 80%, transparent 100%);
+  background-image: -o-linear-gradient(left, #faf6f2 80%, transparent 100%);
+  background-image: linear-gradient(to right, #faf6f2 80%, transparent 100%);
+}
 .archive__item {
   display: inline-block;
   width: 250px;
@@ -101,6 +126,7 @@
   border-bottom: 1px solid rgba(203, 169, 136, 0.3);
   padding-bottom: 1px;
   margin-bottom: 1.5em;
+  clear: both;
 }
 .breadcrumbs span {
   font-size: 1.1em;
@@ -1714,11 +1740,15 @@ main > p a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 2.5em;
-  background-color: #faf6f2;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(80%, #faf6f2), to(transparent));
+  background-image: -webkit-linear-gradient(left, #faf6f2 80%, transparent 100%);
+  background-image: -o-linear-gradient(left, #faf6f2 80%, transparent 100%);
+  background-image: linear-gradient(to right, #faf6f2 80%, transparent 100%);
 }
 .popular__item {
   display: table;
   width: 100%;
+  position: relative;
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1730,20 +1760,11 @@ main > p a:hover {
 .popular__item:hover h3 {
   color: #533c08;
 }
-.popular__date {
-  display: table-cell;
-  padding-right: 1em;
-  font-size: 0.9em;
-  color: rgba(115, 134, 141, 0.8);
-  width: 70px;
-}
-.popular__info {
-  display: table-cell;
-}
 .popular__header {
   display: inline-block;
   font-size: 1.1em;
   color: #3f4e55;
+  margin-right: 1.5em;
 }
 .popular__heading {
   display: inline-block;
@@ -2062,6 +2083,7 @@ main > p a:hover {
 .singleArticle__ft .sharing {
   margin-bottom: 1.5em;
   text-align: center;
+  clear: both;
 }
 .singleArticle__ft .sharing__explanation {
   display: block;

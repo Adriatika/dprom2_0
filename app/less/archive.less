@@ -13,6 +13,28 @@
 		padding:1.5em 0 2.5em;
 		white-space: nowrap;
 	}
+	&__title{
+		display: block;
+		box-sizing: border-box;
+		position: relative;
+		font-size:1.4em;
+		margin-bottom: 1.5em;
+		padding-bottom: 0.3em;
+		font-weight:bold;
+		max-width: 100%;
+		color:@headersColor;
+		&::after{
+			display:block;
+			max-width:100%;
+			width: 100%;
+			content: '';
+			height:1px;
+			bottom:0;
+			position:absolute;
+			background-image:linear-gradient(to right, lighten(@backMenuColor,30%) 80%, transparent 100%);
+		}
+
+	}
 	&__item{
 		display: inline-block;
 		width:250px;

@@ -1065,11 +1065,19 @@
   .foxy {
     text-align: center;
   }
+  .foxy:last-of-type {
+    margin-left: 0em;
+    margin-right: 0;
+  }
 }
 @media all and (max-width: 480px) {
   .foxy {
-    margin-right: 1.5em;
+    margin-right: 0em;
     margin-left: auto;
+  }
+  .foxy:last-of-type {
+    margin-left: 0em;
+    margin-right: 0;
   }
 }
 @media all and (max-width: 320px) {
@@ -1148,10 +1156,10 @@ main > h6 {
   content: '';
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(150, 105, 61, 0.2)), to(transparent));
-  background-image: -webkit-linear-gradient(left, rgba(150, 105, 61, 0.2) 50%, transparent 100%);
-  background-image: -o-linear-gradient(left, rgba(150, 105, 61, 0.2) 50%, transparent 100%);
-  background-image: linear-gradient(to right, rgba(150, 105, 61, 0.2) 50%, transparent 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(90%, rgba(150, 105, 61, 0.2)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(150, 105, 61, 0.2) 90%, transparent 100%);
+  background-image: -o-linear-gradient(left, rgba(150, 105, 61, 0.2) 90%, transparent 100%);
+  background-image: linear-gradient(to right, rgba(150, 105, 61, 0.2) 90%, transparent 100%);
 }
 .hrArticle__img {
   width: 230px;
@@ -1694,6 +1702,47 @@ main > p a:visited {
 }
 main > p a:hover {
   color: #1d2953;
+}
+
+.popular {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2.5em;
+  background-color: #faf6f2;
+}
+.popular__item {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em 1.5em 0.8em;
+}
+.popular__item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(199, 207, 210, 0.8);
+}
+.popular__date {
+  display: table-cell;
+  padding-right: 1em;
+  font-size: 0.9em;
+  color: rgba(115, 134, 141, 0.8);
+  width: 70px;
+}
+.popular__info {
+  display: table-cell;
+}
+.popular__header {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #3f4e55;
+}
+.popular__heading {
+  display: inline-block;
+  font-size: 0.7em;
+  color: rgba(115, 134, 141, 0.8);
 }
 
 .quotes {
@@ -2357,6 +2406,7 @@ main {
 }
 .tileNews__item img {
   height: 160px;
+  width: 100%;
 }
 .tileNews__info {
   background-color: #faf6f2;

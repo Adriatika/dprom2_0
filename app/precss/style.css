@@ -571,9 +571,15 @@
   width: 100%;
 }
 .dblArcticles__rbHeader {
-  font-size: 1.5em;
+  font-size: 1.4em;
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 0.5em;
   font-family: 'RobotoBold', 'Acrobat', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .dblArcticles__lbText {
   font-size: 0.9em;
@@ -760,6 +766,7 @@
   }
   .dblArcticles__leftBlock {
     max-height: 250px;
+    margin-right: 0;
   }
   .dblArcticles__lbHeader {
     font-size: 1.4em;
@@ -774,7 +781,7 @@
     height: 250px;
     position: relative;
     overflow: hidden;
-    margin-right: 1.5em;
+    margin-right: 0;
   }
   .dblArcticles__rightBlock:hover .dblArcticles__rbImg {
     -webkit-box-shadow: none;
@@ -961,12 +968,17 @@
 }
 @media all and (max-width: 768px) {
   .logo {
+    display: block;
+    margin: 0 auto;
     min-width: 300px;
     height: 60px;
   }
   .infoBlock {
-    width: calc(100% - 300px - 1em);
-    float: right;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 @media all and (max-width: 576px) {
@@ -1522,14 +1534,29 @@ textarea:active {
   margin-right: 1.5em;
   border-bottom: 2px solid transparent;
 }
-.heading li:hover {
-  -webkit-transition: color;
-  -o-transition: color;
-  transition: color;
-  border-bottom: 2px solid #96693d;
+.heading li .sub-menu {
+  display: none;
+  background-color: #ffffff;
+  min-width: 250px;
+  position: absolute;
+  top: 2em;
+  left: -7px;
+  z-index: 100;
+  text-align: left;
 }
-.heading li:hover > .sub-menu {
+.heading li .sub-menu li {
   display: block;
+  padding: 1em 0.5em;
+  margin-left: 0;
+}
+.heading li .sub-menu li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 0;
+}
+.heading li .sub-menu li:hover {
+  border-bottom: 2px solid transparent;
 }
 .heading li > a {
   display: inline-block;
@@ -1565,7 +1592,7 @@ textarea:active {
     margin-left: 0;
   }
 }
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
   .menu {
     display: block;
     float: none;

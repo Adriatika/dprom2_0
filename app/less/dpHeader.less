@@ -66,12 +66,16 @@
 }
 @media all and(max-width: 768px){
 	.logo{
+		display: block;
+		margin:0 auto;
 		min-width:300px;
 		height: 60px;
 	}
 	.infoBlock{
-		width: calc(100% - 300px - 1em);
-		float: right;
+		float: none;
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 }
 @media all and (max-width: 576px){

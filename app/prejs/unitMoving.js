@@ -27,14 +27,6 @@ function invMiranda(){
 		}
 	}
 }
-// $(window).resize(function(){
-// 	var width=document.body.clientWidth;
-// 	if(width<=960){
-// 		moveMiranda();
-// 	}else{
-// 		invMiranda();
-// 	}
-// });
 window.onresize = function(event){
 	var width=document.body.clientWidth;
 	if(width<=960){

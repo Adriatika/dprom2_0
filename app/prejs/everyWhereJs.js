@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var li1 	 = document.querySelector('.sm1'),
 	li2 	 = document.querySelector('.sm2'),
 	sm1 	 = li1.querySelector('ul'),
@@ -23,4 +24,5 @@ var li1 	 = document.querySelector('.sm1'),
 				sm2.style.display = "none";
 			}
 			count2++;
-		};
+		};	
+	});

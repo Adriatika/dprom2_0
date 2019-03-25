@@ -2957,6 +2957,47 @@ main {
   }
 }
 
+.upArrow {
+  display: none;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 2px 3px 3px;
+  position: fixed;
+  right: 29%;
+  bottom: 45%;
+  z-index: 200;
+  cursor: pointer;
+}
+.upArrow__img {
+  width: 100%;
+  height: 100%;
+}
+.upArrow:hover {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.upArrow:active {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@media all and (max-width: 1280px) {
+  .upArrow {
+    right: 25%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .upArrow {
+    right: 35%;
+  }
+}
+@media all and (max-width: 960px) {
+  .upArrow {
+    right: 0%;
+  }
+}
+
 
 .widgettitle {
   max-width: 100%;

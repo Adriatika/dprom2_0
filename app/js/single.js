@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=$(".singleArticle").height()/100*10,o=$("#upArrow");$(window).scroll(function(){$(window).scrollTop()>n?o.fadeIn(750):o.fadeOut(750)}),o.on("click",function(n){n.preventDefault(),$("html, body").animate({scrollTop:0},"300")})});

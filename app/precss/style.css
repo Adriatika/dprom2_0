@@ -1827,8 +1827,19 @@ main > p a:hover {
           box-sizing: border-box;
   padding: 1em 1.5em 0.8em;
 }
-.popular__item:not(:last-of-type) {
-  border-bottom: 1px solid rgba(199, 207, 210, 0.8);
+.popular__item:after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  max-width: 100%;
+  content: '';
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, rgba(199, 207, 210, 0.8)), to(transparent));
+  background-image: -webkit-linear-gradient(left, rgba(199, 207, 210, 0.8) 60%, transparent 100%);
+  background-image: -o-linear-gradient(left, rgba(199, 207, 210, 0.8) 60%, transparent 100%);
+  background-image: linear-gradient(to right, rgba(199, 207, 210, 0.8) 60%, transparent 100%);
+  left: 0;
 }
 .popular__item:hover h3 {
   color: #533c08;

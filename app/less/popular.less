@@ -13,12 +13,24 @@
 		max-width:100%;
 		box-sizing:border-box;
 		padding:1em 1.5em 0.8em;
-		&:not(:last-of-type){
-			border-bottom:1px solid lighten(@ArticleDate, 30%);
+		// &:not(:last-of-type){
+		// 	border-bottom:1px solid lighten(@ArticleDate, 30%);
+		// }
+		&:after{
+			display: block;
+			position: absolute;
+			bottom: 0;
+			height:1px;
+			width: 100%;
+			max-width:100%;
+			content:'';
+			background-image:linear-gradient(to right, lighten(@ArticleDate, 30%) 60%, transparent 100%);
+			left:0;
 		}
 		&:hover h3{
 			color:@mainHeaderColor;
 		}
+
 	}
 	&__header{
 		display:inline-block;

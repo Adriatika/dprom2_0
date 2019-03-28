@@ -33,6 +33,7 @@ var li1 	 = document.querySelector('.sm1'),
 		li1A.onclick = function(e){
 			e.preventDefault();
 		}
+		/*Вырезание формы из сайдбара и врезка в всплывающий wrapper*/
 	var upFrom 	= document.querySelector("#pp"),
 		close 	= document.querySelector("#ppCl"),
 		popupW 	= document.querySelector(".popupWrapper"),

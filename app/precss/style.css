@@ -2369,6 +2369,7 @@ main {
 }
 .sidebar-right {
   width: 250px;
+  position: relative;
 }
 .sidebar-right .holdIt {
   display: none;
@@ -3037,6 +3038,13 @@ main {
 @media all and (max-width: 960px) {
   .upArrow {
     right: 0%;
+    bottom: 20%;
+  }
+}
+@media all and (max-width: 576px) {
+  .upArrow {
+    right: 0;
+    bottom: 5%;
   }
 }
 

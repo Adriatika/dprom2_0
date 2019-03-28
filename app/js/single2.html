@@ -9,21 +9,12 @@
 	<script src="jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-		<div class="darkMenu">
-			<div class="wrapper">
-				<ul class="darkList">
-					<li><a href="single-event.html">Авария на хвостохранилище</a></li>
-					<li><a href="post-events.html">Добыча золота в Арктике</a></li>
-					<li><a href="search.html">Новый экскаватор на руднике</a></li>
-				</ul>
-			</div>
-		</div>	
 		<div class="wrapper">
 		<header class="dpHeader">
 			<div class="headerFirstPart">
 				<div class="logo">
 					<a href="index.html">
-						<img src="img/lgDProm.png" alt="Журнал Добывающая промышленность">
+						<img src="img/dprom_online.png" alt="Журнал Добывающая промышленность">
 					</a>
 				</div>
 				<div class="infoBlock">
@@ -55,24 +46,9 @@
 						<input type="checkbox" class="menu__check" id="menuCheck">
 						<ul class="heading">
 							<li class="current-menu-item"><a href="#">Главная</a></li>
-							<li class="sm1">
-								<a href="#">Мероприятия</a>
-								<ul class="sub-menu">
-									<li><a href="#">Календарь событий</a></li>
-									<li><a href="#">Отчеты с мероприятий</a></li>
-									<li><a href="#">Ещё какая-нибудь штука</a></li>
-								</ul>
-							</li>
-							<li class="sm2">
-								<a href="#">Отраслевая пресса</a>
-								<ul class="sub-menu">
-									<li><a href="#">Добывающая промышленность</a></li>
-									<li><a href="#">Что-нибудь ещё</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="post-events.html">Возможности портала</a>
-							</li>
+							<li><a href="#">Архив</a></li>
+							<li><a href="#">О проекте</a></li>
+							<li><a href="post-events.html">Мероприятия</a></li>
 						</ul>
 					</div>
 				</div>
@@ -84,16 +60,16 @@
 						</svg>
 					</label>
 					<ul class="categoryMenu__list">
-						<li><a href="category.html">Золото</a></li>
-						<li><a href="404.html">Уголь</a></li>
-						<li><a href="category.html">Транспорт</a></li>
-						<li><a href="category.html">Металлы и руды</a></li>
-						<li><a href="category.html">Химия</a></li>
-						<li><a href="category.html">Инфо</a></li>
+						<li><a href="#">Золото</a></li>
+						<li><a href="#">Уголь</a></li>
+						<li><a href="#">Транспорт</a></li>
+						<li><a href="#">Металлы и руды</a></li>
+						<li><a href="#">Химия</a></li>
+						<li><a href="#">Инфо</a></li>
 						<li><a href="post-events.html">Мероприятия</a></li>
-						<li><a href="category.html">Нефтегаз</a></li>
-						<li><a href="category.html">Разведка</a></li>
-						<li><a href="category.html">Произвольная страница</a></li>
+						<li><a href="#">Нефтегаз</a></li>
+						<li><a href="#">Разведка</a></li>
+						<li><a href="#">Произвольная страница</a></li>
 					</ul>
 				</div>
 			</div>
@@ -126,156 +102,203 @@
 					<div class="newMagazine">
 						<h3 class="widget-title">Свежий номер</h3>
 						<a href="#">
-							<img src="img/mag11.jpg" alt="">
+							<img src="https://picsum.photos/250/400/?random" alt="">
 						</a>
 						<a href="#">Версия online</a>
 						<a href="#">Скачать</a>
 					</div>
 				</div>
 				<main>
-					<div class="dblArcticles">
-						<a href="single.html" class="dblArcticles__leftBlock">
-							<div class="dblArcticles__holdIt"></div>
-							<img src="https://picsum.photos/640/300/?random" alt="someimg" class="dblArcticles__lbImg">
-							<div class="dblArcticles__lbInfo">
-								<div class="dblArcticles__row">
-									<span class="dblArcticles__lbData">22.10.2045</span>
-									<span class="dblArcticles__lbHeading">металлы и руды</span>
-								</div>
-								<h2 class="dblArcticles__lbHeader">На хвостохранилище в Бразилии произошла катастрофическая авария </h2>
-								<p class="dblArcticles__lbText">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt harum nostrum ipsam assumenda, corporis, beatae quibusdam eos magni praesentium quia laborum fuga omnis soluta
-								</p>
+					<article class="singleArticle">
+						<header class="singleArticle__title">
+							<div class="metaData">
+								<span class="metaData__date">15.09.2019</span>
 							</div>
-						</a>
-							<a href="category.html" class="dblArcticles__rightBlock">
-								<img src="https://picsum.photos/640/300/?random" alt="" class="dblArcticles__rbImg">
-								<div class="dblArcticles__rbInfo">
-									<div class="dblArcticles__row">
-									<span class="dblArcticles__rbData">24.08.2045</span>
-									<span class="dblArcticles__rbHeading">Техника</span>
-									</div>
-									<h2 class="dblArcticles__rbHeader">К 2024 году в РФ намерены увеличить добычу золота на 12% </h2>
-									<p class="dblArcticles__rbText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium.</p>
-								</div>
-							</a>
-					</div>
-					<div class="trplArticles">
-						<a href="single2.html" class="trplArticles__rightBlock">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
-							<div class="trplArticles__info">
-								<div>
-									<span class="trplArticles__data">24.08.2045</span>
-									<span class="trplArticles__heading">Разведка</span>
-								</div>
-								<h2 class="trplArticles__header">К 2024 году в РФ намерены увеличить добычу золота на 12% </h2>
+							<h1>
+						Разработка и испытание нового валкового сепаратора ПВМ на постоянных магнитах для мокрого обогащения слабомагнитных руд
+							</h1>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit aspernatur eaque ea, error, inventore fugit mollitia cupiditate omnis illum consequatur laudantium sed quia totam quod accusantium sint ab illo, maiores nisi dolore animi obcaecati ipsam nulla. Doloremque inventore id, maxime voluptas laboriosam quos ratione modi.</p>
+						<div class="wp-block-image">
+							<figure class="alignleft">
+								<img src="https://picsum.photos/250/400/?random" alt="someone">
+								<figcaption>
+									Рисунок 1 - Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ему однажды ты за агенство курсивных
+								</figcaption>
+							</figure>
+						</div>
+						<h2>Заголовок второго уровня.</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi inventore deserunt consectetur dolores veniam aliquam quae natus expedita fugit quam, aut ad, beatae, atque.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque error nostrum voluptatum quos maiores, tenetur atque laboriosam sint quae maxime aspernatur corrupti porro soluta eos. Maiores ut deserunt, fuga impedit!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<div class="alignleft">
+							<img src="https://picsum.photos/250/400/?random" alt="">
+							<p class="wp-caption-text">
+								some
+							</p>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem <strong>ipsum dolor sit amet</strong>, <em>consectetur adipisicing elit</em>. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+							<ol>
+								<li>ItemScope1</li>
+								<li><a href="#">ItemScope2</a></li>
+							</ol>
+						</p>
+						<img src="https://picsum.photos/300/250/?random" class="alignright" alt="">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<h2>Заголовок второго уровня. Круто, длинно, в пару строк. Без оформления и не поймешь, что это заголовок.</h2>
+						<div class="wp-block-image">
+							<figure class="alignright">
+								<img src="https://picsum.photos/250/400/?random" alt="someone">
+								<figcaption>
+									Рисунок 2 - Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ему однажды ты за агенство курсивных
+								</figcaption>
+							</figure>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<h3>Загловок третьего уровня, хотелсь бы чтобы тоже круто, длинно, в две строки.</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<div class="wp-block-image">
+							<figure class="aligncenter">
+								<img src="https://picsum.photos/250/400/?random" alt="someone">
+								<figcaption>
+									Рисунок 2 - Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Ему однажды ты за агенство курсивных
+								</figcaption>
+							</figure>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<h4>
+							Sedona. Because the Grand Canyon Sucks.
+						</h4>
+						<img src="https://picsum.photos/400/250/?random" alt="" class="aligncenter">
+						<p>
+							<strong>Lorem ipsum dolor sit amet</strong>, consectetur <em>adipisicing elit</em>. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem labore eligendi quod cum nulla, nostrum sed nesciunt veniam aspernatur in alias, iure eius debitis ea eum nisi enim accusamus quam, odio. Amet dolores odit sint debitis fugiat! Esse quia tempora ducimus odit aliquid, laboriosam repudiandae.
+						</p>
+						<blockquote>
+							<figure class="alignleft">
+								<img src="https://picsum.photos/300/250/?random" alt="">
+							</figure>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, ipsa quis unde. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукописи, семь сих предупредила, назад ему единственное то. Вершину знаках пояс семантика океана буквоград жаренные, образ, повстречался оксмокс. Решила, маленький!
+						</blockquote>
+							
+						<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+							<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a class="breadcrumbs__link" href="https://dprom.online/" itemprop="item">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1" />
+							</span>
+							<span class="breadcrumbs__separator"></span>
+							<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a class="breadcrumbs__link" href="https://dprom.online/topics/novosti/" itemprop="item">
+									<span itemprop="name">Новости</span>
+								</a>
+								<meta itemprop="position" content="2"/>
+							</span>
+							<span class="breadcrumbs__separator"></span>
+							<span class="breadcrumbs__current">Автосамосвал Liebherr собрали на Кузбассе</span>
+						</div><!-- .breadcrumbs -->			
+						<footer class="singleArticle__ft">
+							<div class="sharing">
+								<span class="sharing__explanation">Поделиться</span>
+								<a href="#" class="sharing__item vk">
+									<svg>
+										<use xlink:href="svgsprite.svg#vk_logo"></use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item fb">
+									<svg>
+										<use xlink:href="svgsprite.svg#fb_logo">
+										</use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item od">
+									<svg>
+										<use xlink:href="svgsprite.svg#classmates_logo"></use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item pocket">
+									<svg>
+										<use xlink:href="svgsprite.svg#pocket_logo"></use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item telegram">
+									<svg>
+										<use xlink:href="svgsprite.svg#telegram_logo"></use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item viber">
+									<svg>
+										<use xlink:href="svgsprite.svg#viber_logo"></use>
+									</svg>
+								</a>
+								<a href="#" class="sharing__item wApp">
+									<svg>
+										<use xlink:href="svgsprite.svg#wApp_logo"></use>
+									</svg>
+								</a>
 							</div>
-						</a>
-						<a href="#" class="trplArticles__rightBlock">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
-							<div class="trplArticles__info">
-								<div>
-									<span class="trplArticles__data">24.08.2045</span>
-									<span class="trplArticles__heading">Разведка</span>
-								</div>
-								<h2 class="trplArticles__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+»</h2>
-							</div>
-						</a>
-						<a href="#" class="trplArticles__rightBlock">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="trplArticles__img">
-							<div class="trplArticles__info">
-								<div class="trplArticles__wrapper">
-									<span class="trplArticles__data">24.08.2045</span>
-									<span class="trplArticles__heading">Разведка</span>
-								</div>
-								<h2 class="trplArticles__header">«Воркутауголь» увеличит в 2019 году объём инвестиций на 18% </h2>
-							</div>
-						</a>
-					</div>
+						</footer>
+					</article>
 					<div class="hrBnr">
 						<a href="#" class="hrBnr__anchor">
-							<img src="https://picsum.photos/768/92/?random" alt="myImg" class="hrBnr__img">
+							<img src="https://picsum.photos/800/150/?random" alt="myImg" class="hrBnr__img">
 						</a>
 					</div>
-					<div class="hrArticles">
-						<a href="#" class="hrArticle">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
-							<div class="hrArticle__info">
-								<h3 class="hrArticle__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+» </h3>
-								<span class="hrArticle__text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus error, reprehenderit autem.
-								</span>
-								<span class="hrArticle__heading">Шахтная техника</span>
-							</div>
-						</a>
-						<a href="#" class="hrArticle">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
-							<div class="hrArticle__info">
-								<h3 class="hrArticle__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+» </h3>
-								<span class="hrArticle__text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus error, reprehenderit autem.
-								</span>
-								<span class="hrArticle__heading">Переработка</span>
-							</div>
-						</a>
-						<a href="#" class="hrArticle">
-							<img src="https://picsum.photos/300/200/?random" alt="" class="hrArticle__img">
-							<div class="hrArticle__info">
-								<h3 class="hrArticle__header">Московский НПЗ начал готовиться к пусконаладке комплекса «Евро+» </h3>
-								<span class="hrArticle__text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus error, reprehenderit autem.
-								</span>
-								<span class="hrArticle__heading">Новости</span>
-							</div>
-						</a>
-					</div>
-					<div class="hrBnr">
-							<a href="#" class="hrBnr__anchor">
-								<img src="https://picsum.photos/768/92/?random" alt="myImg" class="hrBnr__img">
-							</a>
-					</div>
-					<div class="popular">
-						<a href="#" class="popular__item">
-								<h3 class="popular__header">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad soluta totam!
-								</h3>
-								<span class="popular__heading">
-									Руды и металлы
-								</span>
-						</a>
-						<a href="#" class="popular__item">
-								<h3 class="popular__header">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad soluta totam!
-								</h3>
-								<span class="popular__heading">
-									Руды и металлы
-								</span>
-						</a>
-						<a href="#" class="popular__item">
-								<h3 class="popular__header">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad soluta totam!
-								</h3>
-								<span class="popular__heading">
-									Руды и металлы
-								</span>
-						</a>
-						<a href="#" class="popular__item">
-								<h3 class="popular__header">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad soluta totam!
-								</h3>
-								<span class="popular__heading">
-									Руды и металлы
-								</span>
-						</a>
-						<a href="#" class="popular__item">
-								<h3 class="popular__header">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ad soluta totam!
-								</h3>
-								<span class="popular__heading">
-									Руды и металлы
-								</span>
-						</a>
-						
+					<div class="comments">
+						<input type="radio" class="comments__radio" name="comment" id="fbComment" checked><label for="fbComment" class="comments__cmntTgl">Комментировать FB</label>
+						<input type="radio"  class="comments__radio" name="comment" id="vkComment"><label for="vkComment" class="comments__cmntTgl">Комментировать VK</label>
+						<div class="comments__commentTab" id="blockFb">
+							<img src="img/vkComment.JPG " alt="">
+						</div>
+						<div class="comments__commentTab" id="blockVk">
+							<img src="img/vkComment.JPG" alt="">
+						</div>
 					</div>
 				</main>
 				<div class="sidebar-right">
@@ -286,10 +309,10 @@
 					</div>
 					<div class="foxy">
 						<a href="#">
-							<img src="https://picsum.photos/250/375/?random" alt="">
+							<img src="https://loremflickr.com/250/375?random=1" alt="">
 						</a>
 					</div>
-					<div class="widget_categories">
+					<div class="widget_categories widget">
 						<h3 class="widgettitle sidebar_title">
 							Список категорий
 						</h3>
@@ -311,7 +334,7 @@
 <!-- /Subscription Form -->
 					<div class="foxy">
 						<a href="#">
-							<img src="https://picsum.photos/250/375/?random" alt="">
+							<img src="https://loremflickr.com/250/375?random=2" alt="">
 						</a>
 					</div>
 				</div>
@@ -319,7 +342,6 @@
 		</div>
 		<div class="archive">
 			<section class="archive__wrapper">
-				<h2 class="archive__title">Отраслевая пресса</h2>
 				<div class="archive__item">
 					<a href="#" class="archive__link">
 						<img src="img/mag13.jpg" alt="" class="archive__img">
@@ -430,22 +452,27 @@
 				<div class="bottomSidebarRight">
 					<div class="widget_media_image">
 						<a href="#">
-							<img src="https://via.placeholder.com/250x125" alt="">
+							<img src="https://picsum.photos/250/125/?random" alt="">
 						</a>
 					</div>
 					<div class="widget_media_image">
 						<a href="#">
-							<img src="https://via.placeholder.com/250x125" alt="">
+							<img src="https://picsum.photos/250/125/?random" alt="">
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<a id="upArrow" class="upArrow">
+		<svg class="upArrow__img">
+			<use xlink:href="svgsprite.svg#upLogo"></use>
+		</svg>
+	</a>
 	<footer class="dpFooter">
 		<div class="wrapper">
 			<div class="interactive">
-				<a href="#" class="interactive__sbscr" id="pp">Подписаться</a>
+				<a href="#" class="interactive__sbscr">Подписаться</a>
 				<div class="interactive__social">
 					<span class="interactive__text">Мы в социальных сетях</span>
 					<ul class="interactive__list">
@@ -470,24 +497,11 @@
 				<span class="copyright__text">
 					Копирование материалов запрещено.
 				</span>
-				<span class="copyright__title">
-					Возрастное ограничение 16+
-				</span>
 			</div>
 		</div>
 	</footer>
-	<script src="js/unitMoving.js" type="text/javascript"></script>
-	<script src="js/svg4everybody.js" type="text/javascript" ></script>
-	<script src="js/everyWhereJs.js" type="text/javascript"></script>
+	<script src="svg4everybody.js"></script>
 	<script>svg4everybody();</script>
-	<div class="popupWrapper"></div>
-	<div class="popupWrapper__form" id="ppForm">
-			<span class="popupWrapper__close" id="ppCl">
-				<svg class="popupWrapper__icon">
-					<use xlink:href="svgsprite.svg#close"></use>
-				</svg>
-			</span>
-	</div>
-	
+	<script src="prejs/single.js"></script>
 </body>
 </html>

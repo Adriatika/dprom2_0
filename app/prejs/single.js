@@ -8,14 +8,11 @@ $(document).ready(function(){
 	var formHeight 		= $(".sp-form-outer").offsetHeight;//вычисление высоты формы
 	var i 				= 0;//счетчик
 	var widgets 		= sidebarRight.querySelectorAll('.widget');// создание массива виджетов сайдбара
-	var rNumber 		= Math.round(Math.random() * (foxes.length-1));	// генерация псевдослучайного числа
+	var rNumber 		= Math.floor(Math.random() * (foxes.length));	// генерация псевдослучайного числа
 	var footerHeight 	= document.querySelector('.dpFooter').offsetHeight + document.querySelector('.sector2').offsetHeight;
 	var windowHeight 	= document.querySelector('html').offsetHeight;
 	var wrap = getComputedStyle(document.querySelector('.wrapper'));
 	var d = wrap.marginRight;
-
-	console.log("margin-right = " + d);
-
 	for(i = 0; i<foxes.length; i++){
 		heightFox+=foxes[i].offsetHeight + 24;
 	}
@@ -23,17 +20,19 @@ $(document).ready(function(){
 		heightFox+=widgets[i].offsetHeight + 24;
 	}
 	heightFox = heightFox +450;
-
 	$(window).scroll(function(){
-		if($(window).scrollTop() > offset){
+		var x =$(window).scrollTop();
+		console.log(x);
+		if(x>offset && x < (windowHeight - footerHeight - 750)){
 			up.fadeIn(750);
 		} else{
-			up.fadeOut(750);
-		}
+			up.fadeOut(150);
+		};
+	});
+	$(window).scroll(function(){
 		var randomBlock = foxes[rNumber];
-		if(vpSize() > 960 && ($(window).scrollTop())> heightFox && ($(window).scrollTop()< (windowHeight - footerHeight))){
+		if(vpSize() > 960 && ($(window).scrollTop())> heightFox && ($(window).scrollTop()< (windowHeight - footerHeight - 150) && articleHeight>heightFox)){
 			d = wrap.marginRight;
-			console.log(d);
 			randomBlock.style.position = "fixed";
 			randomBlock.style.top = "10%";
 			if(vpSize()>1200 && vpSize()<1400){
@@ -45,7 +44,6 @@ $(document).ready(function(){
 			randomBlock.style.position = "static";
 		}
 	});
-
 	up.on('click', function(e){
 			e.preventDefault();
 			$('html, body').animate({scrollTop:0}, '300');
@@ -54,8 +52,4 @@ $(document).ready(function(){
 	function vpSize(){
 		return $(window).width();
 	}
-
-	console.log(vpSize());
-	console.log(heightFox);
-	console.log(rNumber);
 });

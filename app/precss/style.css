@@ -3007,7 +3007,7 @@ main {
   padding: 2px 3px 3px;
   position: fixed;
   right: 29%;
-  bottom: 25%;
+  bottom: 10%;
   z-index: 200;
   cursor: pointer;
   opacity: 0.6;
@@ -3041,13 +3041,13 @@ main {
 @media all and (max-width: 960px) {
   .upArrow {
     right: 0%;
-    bottom: 20%;
+    bottom: 0%;
   }
 }
 @media all and (max-width: 576px) {
   .upArrow {
     right: 0;
-    bottom: 5%;
+    bottom: 0%;
   }
 }
 

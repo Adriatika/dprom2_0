@@ -1104,7 +1104,7 @@
   .foxy {
     text-align: center;
   }
-  .foxy > a {
+  .foxy a {
     margin: 0 auto;
   }
   .foxy:last-of-type {
@@ -2054,6 +2054,9 @@ main > p a:hover {
   border-left: 2px solid #0b1538;
   padding-left: 1.5em;
 }
+.singleArticle blockquote figure.alignleft {
+  padding-left: 1em;
+}
 .singleArticle blockquote p {
   font-size: 1em;
 }
@@ -2149,7 +2152,9 @@ main > p a:hover {
   color: #1d2953;
 }
 .singleArticle ul {
-  list-style: none;
+  padding-left: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -2274,10 +2279,19 @@ main > p a:hover {
     min-width: 300px;
     float: none;
     clear: both;
+    text-align: center;
   }
   .singleArticle figure.wp-block-embed-youtube {
     max-width: 100%;
     min-width: 300px;
+  }
+  .singleArticle blockquote figure.alignleft {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 480px) {
+  .singleArticle {
+    max-width: 90%;
   }
 }
 @media all and (max-width: 320px) {
@@ -2422,6 +2436,11 @@ main {
   main,
   .main {
     padding-right: 0em;
+  }
+  .middle-block {
+    max-width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 @media all and (max-width: 320px) {

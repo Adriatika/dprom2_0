@@ -46,6 +46,9 @@
 		margin-top: 2em;
 		border-left:2px solid @HeaderColor2;
 		padding-left:1.5em;
+		& figure.alignleft{
+			padding-left:1em;
+		}
 	}
 	& blockquote p{
 		font-size:1em;
@@ -123,7 +126,8 @@
 		}
 	}
 	& ul{
-		list-style:none;
+		padding-left:1em;
+		box-sizing: border-box;
 		margin-top:1.5em;
 		margin-bottom:1.5em;
 		& li{
@@ -251,11 +255,20 @@
 			min-width: 300px;
 			float: none;
 			clear: both;
+			text-align: center;
 		}
 		& figure.wp-block-embed-youtube{
 			max-width: 100%;
 			min-width: 300px;
 		}
+		& blockquote figure.alignleft{
+			padding-left:0;
+		}
+	}
+}
+@media all and(max-width:480px){
+	.singleArticle{
+		max-width: 90%;
 	}
 }
 @media all and(max-width:320px){

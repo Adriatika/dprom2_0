@@ -33,9 +33,9 @@ $(document).ready(function(){
 	});
 	$(window).scroll(function(){
 		var randomBlock = foxes[rNumber];
-		if(vpSize() > 960 && ($(window).scrollTop())> heightFox && ($(window).scrollTop()< (windowHeight - footerHeight - 150) && articleHeight>heightFox)){
+		if(vpSize() > 960 && ($(window).scrollTop())> heightFox  && articleHeight>heightFox){
 			d = wrap.marginRight;
-			randomBlock.style.position = "fixed";
+			randomBlock.style.position = "sticky";
 			randomBlock.style.top = "10%";
 			if(vpSize()>1200 && vpSize()<1400){
 				randomBlock.style.right ="3%";

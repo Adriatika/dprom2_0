@@ -2163,6 +2163,7 @@ main > p a:hover {
   font-size: 1.2em;
   margin-bottom: 0.5em;
   color: #3f4e55;
+  line-height: 1.5em;
 }
 .singleArticle ol {
   margin: 1.5em 0;
@@ -2171,6 +2172,8 @@ main > p a:hover {
   padding-left: 0.5em;
   font-size: 1.2em;
   margin-bottom: 0.5em;
+  color: #3f4e55;
+  line-height: 1.5em;
 }
 .singleArticle strong {
   font-family: 'Acrobat', sans-serif;

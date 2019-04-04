@@ -70,6 +70,12 @@
     margin-left: 0;
   }
 }
+@media all and (max-width: 576px) {
+  .archive {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .bottomSidebarLeft {
   display: none;
@@ -274,6 +280,11 @@
 @media screen and (max-width: 1140px) {
   .comments__cmntTgl {
     font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .comments {
+    padding: 0 0.5em;
   }
 }
 
@@ -1124,7 +1135,6 @@
 }
 @media all and (max-width: 320px) {
   .foxy {
-    margin-right: 1.5em;
     margin-left: auto;
   }
 }
@@ -1285,7 +1295,10 @@ main > h6 {
 }
 @media all and (max-width: 480px) {
   .hrBnr {
-    max-width: 470px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 0.5em;
   }
 }
 
@@ -2279,7 +2292,7 @@ main > p a:hover {
   .singleArticle img.alignleft {
     max-width: 100%;
     margin: 0 auto 1em;
-    min-width: 300px;
+    min-width: 250px;
     float: none;
     clear: both;
     text-align: center;
@@ -2295,6 +2308,7 @@ main > p a:hover {
 @media all and (max-width: 480px) {
   .singleArticle {
     max-width: 90%;
+    margin: 0 auto;
   }
 }
 @media all and (max-width: 320px) {
@@ -2327,7 +2341,6 @@ main > p a:hover {
   .singleArticle figure.aligncenter,
   .singleArticle figure.alignnone,
   .singleArticle figure.alignleft {
-    max-width: 300px;
     min-width: 0;
     margin: 0 auto 1.5em;
   }
@@ -2441,7 +2454,7 @@ main {
     padding-right: 0em;
   }
   .middle-block {
-    max-width: 90%;
+    max-width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -3181,6 +3194,11 @@ main {
   .wrapper {
     width: 95%;
     padding: 0 0.5em;
+  }
+}
+@media all and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
   }
 }
 @media all and (max-width: 320px) {

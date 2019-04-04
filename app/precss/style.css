@@ -875,6 +875,9 @@
   }
 }
 @media all and (max-width: 480px) {
+  .dblArcticles {
+    max-width: 100%;
+  }
   .dblArcticles__rbHeader,
   .dblArcticles__lbHeader {
     line-height: 1em;
@@ -882,7 +885,6 @@
   .dblArcticles__rightBlock,
   .dblArcticles__leftBlock {
     max-width: 100%;
-    margin-right: 0.5em;
   }
 }
 @media all and (max-width: 320px) {
@@ -1022,11 +1024,6 @@
     display: block;
     max-width: 300px;
     margin: 0 auto;
-  }
-  .dpHeader {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 0 0.5em;
   }
 }
 
@@ -2324,7 +2321,7 @@ main > p a:hover {
 }
 @media all and (max-width: 480px) {
   .singleArticle {
-    max-width: 90%;
+    max-width: 97%;
     margin: 0 auto;
   }
 }
@@ -2466,6 +2463,9 @@ main {
   }
 }
 @media all and (max-width: 480px) {
+  .table {
+    display: block;
+  }
   main,
   .main {
     padding-right: 0em;
@@ -2761,10 +2761,10 @@ main {
   padding: 1em 1.5em;
   top: 0;
   left: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(40, 64, 70, 0.9)), color-stop(70%, rgba(40, 64, 70, 0.3)), to(rgba(40, 64, 70, 0.8)));
-  background-image: -webkit-linear-gradient(bottom, rgba(40, 64, 70, 0.9) 30%, rgba(40, 64, 70, 0.3) 70%, rgba(40, 64, 70, 0.8) 100%);
-  background-image: -o-linear-gradient(bottom, rgba(40, 64, 70, 0.9) 30%, rgba(40, 64, 70, 0.3) 70%, rgba(40, 64, 70, 0.8) 100%);
-  background-image: linear-gradient(to top, rgba(40, 64, 70, 0.9) 30%, rgba(40, 64, 70, 0.3) 70%, rgba(40, 64, 70, 0.8) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(30%, rgba(13, 39, 46, 0.9)), color-stop(70%, rgba(13, 39, 46, 0.7)), to(rgba(13, 39, 46, 0.9)));
+  background-image: -webkit-linear-gradient(bottom, rgba(13, 39, 46, 0.9) 30%, rgba(13, 39, 46, 0.7) 70%, rgba(13, 39, 46, 0.9) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(13, 39, 46, 0.9) 30%, rgba(13, 39, 46, 0.7) 70%, rgba(13, 39, 46, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(13, 39, 46, 0.9) 30%, rgba(13, 39, 46, 0.7) 70%, rgba(13, 39, 46, 0.9) 100%);
 }
 .trplArticles__data,
 .trplArticles__heading {
@@ -3220,6 +3220,6 @@ main {
 }
 @media all and (max-width: 320px) {
   .wrapper {
-    padding: 0;
+    padding: 0 0.5em;
   }
 }

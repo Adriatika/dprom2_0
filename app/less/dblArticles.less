@@ -46,6 +46,9 @@
 		color:white;
 		background-image: linear-gradient(to top, rgba(40,64,70,0.9) 30%, rgba(0,0,0,0) 70%, rgba(40,64,70,0.9)100%);
 	}
+	&__row{
+		margin-bottom: 0.5em;
+	}
 	&__lbData, 
 	&__rbData{
 		max-width: 100px;
@@ -60,7 +63,6 @@
 		max-width: 200px;
 		border:1px solid rgba(255,255,255,1);
 		padding:0em 0.2em 0.2em;
-		margin-left: 1.5em;
 		border-radius: 3px;
 		text-transform: lowercase;
 		&:hover{
@@ -324,8 +326,19 @@
 		}
 	}
 }
+@media all and(max-width: 576px){
+	.dblArcticles{
+		&__rbHeader, &__lbHeader{
+			line-height: 1em;
+		}
+	}
+
+}
 @media all and(max-width: 480px){
 	.dblArcticles{
+		&__rbHeader, &__lbHeader{
+			line-height: 1em;
+		}
 		&__rightBlock, &__leftBlock{
 			max-width: 100%;
 			margin-right:.5em;

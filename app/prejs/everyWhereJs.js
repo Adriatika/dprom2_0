@@ -71,4 +71,41 @@ var li1 	 = document.querySelector('.sm1'),
 					spWrap.appendChild(formD);
 				}
      			});
+		 var rightArrow = document.querySelector('#sliderRight'),
+		 	leftArrow 	= document.querySelector('#sliderLeft') ,
+		 	sliderList 	= document.querySelector('.sliderAns__list'),
+		 	sliderItems = document.querySelectorAll('.sliderAns__item');
+		 	sliderOffset  = 0,
+		 	change 		=285, 
+		 	windowWidth = document.querySelector('html').offsetWidth,
+		 	theWidth = -1600;
+		 	if(windowWidth<=576 && windowWidth>360){
+		 		change = 330;
+		 		theWidth = -2800;
+		 	}else if(windowWidth<=360){
+		 		change = 323;
+		 		theWidth = -2700;
+		 	}
+		 	sliderList.style.left =0;
+		 	rightArrow.onclick = function(){
+		 		if(sliderOffset >= theWidth){
+		 			rightArrow.style.opacity = 1;	
+		 			leftArrow.style.opacity = 1;	 			
+		 			sliderOffset = sliderOffset - change;
+		 			sliderList.style.left = sliderOffset+'px';
+		 	}else{
+		 		rightArrow.style.opacity = 0.5;
+		 	}
+		 	}
+		 	leftArrow.onclick = function(){
+		 		if(sliderOffset < 0){
+		 			rightArrow.style.opacity = 1;
+		 			leftArrow.style.opacity = 1;
+			 		sliderOffset = sliderOffset + change;
+			 		sliderList.style.left = sliderOffset+'px';
+		 	}else{
+		 		leftArrow.style.opacity = 0.5;
+		 	}
+		 	}
+
 	});

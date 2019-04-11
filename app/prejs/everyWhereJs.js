@@ -74,19 +74,30 @@ var li1 	 = document.querySelector('.sm1'),
 		 var rightArrow = document.querySelector('#sliderRight'),
 		 	leftArrow 	= document.querySelector('#sliderLeft') ,
 		 	sliderList 	= document.querySelector('.sliderAns__list'),
-		 	sliderItems = document.querySelectorAll('.sliderAns__item');
+		 	sliderItems = document.querySelectorAll('.sliderAns__item'),
+		 	divSlide 	= document.querySelector(".sliderAns");
 		 	sliderOffset  = 0,
-		 	change 		=285, 
+		 	change 		=275, 
 		 	windowWidth = document.querySelector('html').offsetWidth,
-		 	theWidth = -1600;
-		 	if(windowWidth<=576 && windowWidth>360){
+		 	theWidth = -1700;
+		 	sliderList.style.left =0;
+		 	if(windowWidth<=576 && windowWidth>480){
 		 		change = 330;
 		 		theWidth = -2800;
-		 	}else if(windowWidth<=360){
-		 		change = 323;
-		 		theWidth = -2700;
-		 	}
-		 	sliderList.style.left =0;
+		 	}else if(windowWidth<=480){
+		 			divSlide.style.width="320px";
+		 			divSlide.style.margin="0 auto 1.5em";
+		 			change = 324;	
+		 			theWidth = -2800;
+		 			leftArrow.style.width="35px";
+		 			rightArrow.style.width="35px";
+		 			rightArrow.style.right="-10px";
+		 			for(z = 0; z<sliderItems.length; z++){
+		 				sliderItems[z].style.margin="0 35px 0 35px";
+
+		 			}
+		 		}
+		 	
 		 	rightArrow.onclick = function(){
 		 		if(sliderOffset >= theWidth){
 		 			rightArrow.style.opacity = 1;	

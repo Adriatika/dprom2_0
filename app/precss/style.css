@@ -146,6 +146,7 @@
   vertical-align: middle;
   margin: 0 2px;
   margin-right: 5px;
+  display: inline-block;
 }
 .breadcrumbs span a {
   color: rgba(115, 134, 141, 0.8);
@@ -158,7 +159,7 @@
 .breadcrumbs__separator:after {
   display: block;
   position: absolute;
-  top: 1px;
+  top: -1px;
   left: -2px;
   width: 5px;
   height: 5px;
@@ -171,6 +172,8 @@
 .breadcrumbs__current {
   color: rgba(0, 1, 1, 0.8);
   padding-top: 4px;
+  padding-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .categoryMenu {
@@ -2068,13 +2071,27 @@ main > p a:hover {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
+.sidebarNews__mainTitle {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #96693d;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.sidebarNews__mainTitle a {
+  color: #3f4e55;
+}
 .sidebarNews__item {
   display: block;
   margin-bottom: 1.5em;
 }
 .sidebarNews__item:hover .sidebarNews__heading {
   color: #0f0f0f;
-  border: 1px solid #0f0f0f;
 }
 .sidebarNews__item:hover .sidebarNews__title {
   color: #0f0f0f;
@@ -2082,10 +2099,9 @@ main > p a:hover {
 .sidebarNews__heading {
   display: inline-block;
   font-size: 0.8em;
-  border: 1px solid #96693d;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  padding: 0.2em 0.3em;
+  padding: 0.2em 0;
   color: #96693d;
   text-transform: lowercase;
   margin-bottom: 0.3em;
@@ -2553,7 +2569,7 @@ main > p a:hover {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 1em;
+  margin: 0 25px;
   white-space: normal;
   vertical-align: top;
 }
@@ -2584,15 +2600,16 @@ main > p a:hover {
 }
 .sliderAns__title {
   font-size: 1.1em;
+  font-weight: bold;
   line-height: 1.3em;
 }
 .sliderAns__date {
   display: inline-block;
   padding: 0.2em;
   font-size: 0.8em;
-  border: 1px solid #485156;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  color: #533c08;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 @media all and (max-width: 576px) {
   .sliderAns__item {
@@ -2606,11 +2623,11 @@ main > p a:hover {
 }
 @media all and (max-width: 360px) {
   .sliderAns__item {
-    margin-left: 34px;
+    margin-left: 35px;
     margin-right: 35px;
   }
   .sliderAns__item:first-of-type {
-    margin-left: 27px;
+    margin-left: 34px;
     margin-right: 35px;
   }
 }

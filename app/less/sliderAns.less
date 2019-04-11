@@ -60,7 +60,7 @@
 		width:250px;
 		display: inline-block;
 		box-sizing: border-box;
-		margin:0 1em;
+		margin:0 25px;
 		white-space:normal;
 		vertical-align: top;
 		&:first-of-type{
@@ -89,14 +89,16 @@
 	}
 	&__title{
 		font-size: 1.1em;
+		font-weight: bold;
 		line-height: 1.3em;
 	}
 	&__date{
 		display: inline-block;
 		padding:0.2em;
 		font-size: 0.8em;
-		border:1px solid @menuAColor;
-		border-radius:3px;
+		color:@mainHeaderColor;
+		margin-bottom:0.5em;
+		margin-top: 0.5em;
 	}
 }
 @media all and(max-width: 576px){
@@ -114,11 +116,11 @@
 @media all and(max-width:360px){
 	.sliderAns{
 		&__item{
-			margin-left:34px;
+			margin-left:35px;
 			margin-right:35px;
 		}
 		&__item:first-of-type{
-			margin-left:27px;
+			margin-left:34px;
 			margin-right:35px;
 		}
 	}

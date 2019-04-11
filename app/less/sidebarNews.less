@@ -7,12 +7,25 @@
 	overflow: hidden;
 	margin-bottom: 1.5em;
 	margin-top:1.5em;
+	&__mainTitle{
+		display: block;
+		width:100%;
+		max-width: 100%;
+		box-sizing: border-box;
+		font-size: 1.2em;
+		padding-bottom: 0.2em;
+		border-bottom: 1px solid @menuAColorHover;
+		margin-top:1.5em;
+		margin-bottom: 1em;
+		& a{
+			color:@headersColor;
+		}
+	}
 	&__item{
 		display: block;
 		margin-bottom: 1.5em;
 		&:hover .sidebarNews__heading{
 			color:@footerBack;
-			border:1px solid @footerBack;
 		}
 		&:hover .sidebarNews__title{
 			color:@footerBack;
@@ -21,9 +34,8 @@
 	&__heading{
 		display: inline-block;
 		font-size:0.8em;
-		border:1px solid @menuAColorHover;
 		border-radius: 3px;
-		padding:0.2em 0.3em;
+		padding:0.2em 0;
 		color:@menuAColorHover;
 		text-transform: lowercase;
 		margin-bottom: 0.3em;

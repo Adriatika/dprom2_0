@@ -206,12 +206,12 @@
 @media all and(max-width:768px){
 	.trplArticles{
 		display: block;
+		vertical-align: top;
 		&__rightBlock, &__rightBlock:last-of-type{
 			display:block;
 			width:100%;
 			position:relative;
 			margin-right: 0;
-			vertical-align:bottom;
 		}
 		&__rightBlock::after, &__rightBlock:last-of-type::after{
 			display: block;
@@ -226,6 +226,7 @@
 			display: inline-block;
 			width:75px;
 			height:50px;
+			vertical-align: top;
 		}
 		&__rightBlock:last-of-type .trplArticles__img{
 			margin-right: 0;
@@ -254,6 +255,9 @@
 		}
 		&__rightBlock:last-of-type:hover .trplArticles__header{
 			color:@menuAColor;
+		}
+		&__img{
+			margin-top:4px;
 		}
 	}
 }

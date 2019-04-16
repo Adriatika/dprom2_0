@@ -95,6 +95,7 @@
   display: table-cell;
   width: 250px;
   vertical-align: top;
+  padding-top: 4.2em;
 }
 @media all and (max-width: 768px) {
   .bottomSidebarRight {
@@ -115,6 +116,7 @@
     -webkit-order: -1;
         -ms-flex-order: -1;
             order: -1;
+    padding-top: 0;
   }
 }
 @media all and (max-width: 576px) {
@@ -1248,6 +1250,14 @@ main > h6 {
   max-width: calc(100% - 265px);
   vertical-align: top;
 }
+.hrArticle__data {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100px;
+  font-size: 0.8em;
+  color: #485156;
+  margin-bottom: 1em;
+}
 .hrArticle__header {
   font-size: 1.2em;
   color: #3f4e55;
@@ -1284,6 +1294,11 @@ main > h6 {
   padding: 0 0.2em 0.1em 0.1em;
   border: 1px solid #6a8490;
 }
+.hrArticle:hover .hrArticle__text,
+.hrArticle:hover .hrArticle__header,
+.hrArticle:hover .hrArticle__data {
+  color: #533c08;
+}
 @media all and (max-width: 576px) {
   .hrArticle {
     width: 100%;
@@ -1291,11 +1306,15 @@ main > h6 {
   .hrArticle__img {
     width: 75px;
     height: 50px;
+    margin-top: 4px;
   }
   .hrArticle__info {
     width: calc(100% - 75px - 2em);
     max-width: none;
     margin-bottom: 1em;
+  }
+  .hrArticle__data {
+    margin-bottom: 0.1em;
   }
   .hrArticle__text {
     display: none;
@@ -3229,6 +3248,7 @@ main {
 @media all and (max-width: 768px) {
   .trplArticles {
     display: block;
+    vertical-align: top;
   }
   .trplArticles__rightBlock,
   .trplArticles__rightBlock:last-of-type {
@@ -3236,7 +3256,6 @@ main {
     width: 100%;
     position: relative;
     margin-right: 0;
-    vertical-align: bottom;
   }
   .trplArticles__rightBlock::after,
   .trplArticles__rightBlock:last-of-type::after {
@@ -3256,6 +3275,7 @@ main {
     display: inline-block;
     width: 75px;
     height: 50px;
+    vertical-align: top;
   }
   .trplArticles__rightBlock:last-of-type .trplArticles__img {
     margin-right: 0;
@@ -3293,6 +3313,9 @@ main {
   }
   .trplArticles__rightBlock:last-of-type:hover .trplArticles__header {
     color: #485156;
+  }
+  .trplArticles__img {
+    margin-top: 4px;
   }
 }
 @media all and (max-width: 320px) {

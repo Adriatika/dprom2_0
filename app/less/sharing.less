@@ -1,0 +1,36 @@
+@import "vars.less";
+.sharing{
+			margin-bottom:1.5em;
+			padding-left:0.2em;
+			clear: both;
+			& a{
+				display: inline-block;
+				background-color:@HeaderColor2;
+				width:20px;
+				height:20px;
+				padding:3px;
+				margin-right: 0.5em;
+				margin-bottom: 1em;
+				&:last-of-type{
+					margin-right:0;
+				}
+				& > svg{
+					width: 100%;
+					height: 100%;
+					fill:#ffffff;
+				}
+			}
+		}
+@media all and(max-width: 576px){
+	.sharing{
+		text-align: center;
+		padding-left:0;
+	}
+}
+@media all and(max-width:320px){
+	.sharing{
+			&__explanation{
+				font-size:1.1em;
+			}
+}
+}

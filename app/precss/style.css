@@ -172,8 +172,7 @@
 .breadcrumbs__current {
   color: rgba(0, 1, 1, 0.8);
   padding-top: 4px;
-  padding-bottom: 4px;
-  text-transform: capitalize;
+  padding-bottom: 1px;
 }
 
 .categoryMenu {
@@ -1646,6 +1645,11 @@ textarea:active {
     text-align: center;
   }
 }
+@media all and (max-width: 576px) {
+  .menu li:last-of-type {
+    display: none;
+  }
+}
 @media all and (max-width: 480px) {
   .menu {
     text-align: left;
@@ -1654,12 +1658,6 @@ textarea:active {
     margin-bottom: 1.5em;
     margin-left: 0;
     margin-right: 0.5em;
-  }
-  .menu li:first-of-type {
-    display: none;
-  }
-  .menu li:last-of-type {
-    margin-right: 0;
   }
   .menu li a {
     font-size: 0.9em;
@@ -2061,6 +2059,40 @@ main > p a:hover {
   }
 }
 
+.sharing {
+  margin-bottom: 1.5em;
+  padding-left: 0.2em;
+  clear: both;
+}
+.sharing a {
+  display: inline-block;
+  background-color: #0b1538;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+.sharing a:last-of-type {
+  margin-right: 0;
+}
+.sharing a > svg {
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+@media all and (max-width: 576px) {
+  .sharing {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 320px) {
+  .sharing__explanation {
+    font-size: 1.1em;
+  }
+}
+
 .sidebarNews {
   display: block;
   -webkit-box-sizing: border-box;
@@ -2360,39 +2392,6 @@ main > p a:hover {
           box-sizing: border-box;
   margin-bottom: 2em;
 }
-.singleArticle__ft .sharing {
-  margin-bottom: 1.5em;
-  text-align: center;
-  clear: both;
-}
-.singleArticle__ft .sharing__explanation {
-  display: block;
-  background-color: #0b1538;
-  color: #ffffff;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0.5em;
-  margin-bottom: 1em;
-}
-.singleArticle__ft .sharing a {
-  display: inline-block;
-  background-color: #0b1538;
-  width: 40px;
-  height: 40px;
-  padding: 3px;
-  margin-right: 0.5em;
-  margin-bottom: 1em;
-}
-.singleArticle__ft .sharing a:last-of-type {
-  margin-right: 0;
-}
-.singleArticle__ft .sharing a > svg {
-  width: 100%;
-  height: 100%;
-  fill: #ffffff;
-}
 @media all and (max-width: 1280px) {
   .singleArticle {
     width: 80%;
@@ -2488,10 +2487,7 @@ main > p a:hover {
   .singleArticle ol li {
     font-size: 1em;
   }
-  .singleArticle__ft .sharing__explanation {
-    font-size: 1.1em;
-  }
-  .singleArticle__ft .sharing a {
+  .singleArticle a {
     width: 20px;
     height: 20px;
   }

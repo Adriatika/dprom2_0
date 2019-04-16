@@ -96,6 +96,16 @@
 		text-align: center;
 	}
 }
+@media all and(max-width:576px){
+	.menu{
+		& li{
+			&:last-of-type{
+				display: none;
+			}
+		}
+	}
+}
+
 @media all and(max-width:480px){
 	.menu{
 		text-align: left;
@@ -103,12 +113,6 @@
 			margin-bottom: 1.5em;
 			margin-left:0;
 			margin-right: 0.5em;
-			&:first-of-type{
-				display: none;
-			}
-			&:last-of-type{
-				margin-right: 0;
-			}
 			& a{
 			font-size: 0.9em;
 			}

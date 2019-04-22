@@ -282,6 +282,10 @@
           box-sizing: border-box;
   margin: 1em 0 1.5em 0;
 }
+.comments__commentTab iframe {
+  width: 100%;
+  max-width: 100%;
+}
 .comments #fbComment:checked ~ div#blockFb {
   display: block;
 }
@@ -1038,11 +1042,25 @@
   }
 }
 
+.wp-video,
+video,
+embed,
+object,
+iframe {
+  max-width: 100%!important;
+  min-width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .events__header {
   font-size: 1.2em;
   color: #3f4e55;
   padding-bottom: 0.2em;
   border-bottom: 1px solid #d3b390;
+}
+.events__header a {
+  color: #3f4e55;
 }
 .events__row {
   font-size: 0.8em;
@@ -1118,7 +1136,7 @@
   display: inline-block;
   width: 100%;
   width: 250px;
-  height: 375px;
+  height: auto;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2079,7 +2097,7 @@ main > p a:hover {
 }
 
 .sharing {
-  margin-bottom: 1.5em;
+  margin-bottom: 0;
   padding-left: 0.2em;
   clear: both;
 }
@@ -2409,7 +2427,7 @@ main > p a:hover {
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 }
 @media all and (max-width: 1280px) {
   .singleArticle {
@@ -3387,6 +3405,9 @@ main {
   padding-bottom: 0.2em;
   margin-bottom: 0.5em;
 }
+.widgettitle a {
+  color: #485156;
+}
 
 .widget_categories {
   display: block;
@@ -3465,6 +3486,9 @@ main {
   margin-bottom: 1em;
   padding-bottom: 0.2em;
   border-bottom: 1px solid #c49a6c;
+}
+.widget-title a {
+  color: #3f4e55;
 }
 
 .wrapper {

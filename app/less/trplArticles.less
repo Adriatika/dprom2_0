@@ -2,7 +2,7 @@
 .trplArticles{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	&__rightBlock{
 		display: flex;
@@ -12,6 +12,7 @@
 		position: relative;
 		overflow: hidden;
 		margin-bottom: 2.5em;
+		margin-right: 0.5%;
 		&:last-of-type{
 			margin-right: 0;
 		}
@@ -74,6 +75,7 @@
 }
 @media all and(max-width:1140px){
 	.trplArticles{
+		justify-content: space-between;
 		flex-wrap: wrap;
 		&__rightBlock{
 			width:calc(50% - 1em);
@@ -140,6 +142,7 @@
 }
 @media all and(max-width: 960px){
 	.trplArticles{
+		justify-content: flex-start;
 		flex-wrap:nowrap;
 		&__rightBlock, &__rightBlock:last-of-type{
 			display: flex;
@@ -150,6 +153,9 @@
 			overflow: hidden;
 			margin-bottom: 2.5em;
 			margin-right:1%;
+			& > .trplArticles__img{
+				max-height: none;
+			} 
 	}
 		&__header{
 			font-size:1.2em;

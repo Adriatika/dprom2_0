@@ -48,7 +48,7 @@ $(document).ready(function(){
 	});
 	up.on('click', function(e){
 			e.preventDefault();
-			var kff = allHeight*0.2;
+			var kff = allHeight*0.07;
 			$('html, body').animate({scrollTop:0}, kff);
 	});
 

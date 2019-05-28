@@ -30,8 +30,7 @@ main.spec{
 		height: 100%;
 		position: relative;
 		&:hover .ground__img{
-			filter:brightness(75%);	
-		}
+			filter:brightness(75%);	}
 	}
 	&__img{
 		width:100%;
@@ -77,7 +76,7 @@ main.spec{
 			filter:brightness(80%);
 		}
 		&:nth-of-type(1){
-			margin-bottom:12%;
+			margin-bottom:11%;
 		}
 	}
 	&__img{
@@ -122,9 +121,6 @@ main.spec{
 		background-color:@HeaderColor2;
 		margin-right:0.5em;
 		margin-bottom:1em;
-		&:last-of-type{
-			margin-right:0;
-		}
 		&:hover .trplspec__img{
 			transform: scale(1.1);
 		}
@@ -185,7 +181,7 @@ main.spec{
 	.trplspec{
 		justify-content: space-around;
 		&__article{
-			max-width: none;
+			max-width: 150px;
 			margin:0 auto 1em;
 			flex-basis: calc(50% - 1em);
 			&:last-of-type{
@@ -194,6 +190,7 @@ main.spec{
 		}
 	}
 	.fourth{
+		margin-bottom: 1.5em;
 		&__title{
 			font-size: 1.3em;
 		}
@@ -232,6 +229,8 @@ main.spec{
 	}
 	.trplspec{
 		flex-direction: column;
+		&__article{
+			max-width:none;}
 	}
 }
 @media all and (max-width: 576px){

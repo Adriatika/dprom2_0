@@ -185,6 +185,7 @@
     display: block;
     padding: 1em 0;
     position: relative;
+    margin-left: -3px;
   }
   .categoryMenu > label {
     display: block;
@@ -215,7 +216,7 @@
             box-sizing: border-box;
     left: 0;
     padding-top: 1.5em;
-    z-index: 100;
+    z-index: 200;
     min-height: 100vh;
     background-color: #ffffff;
   }
@@ -2674,6 +2675,22 @@ main.spec {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.pageviews-placeholder {
+  margin-left: 40px;
+  position: relative;
+  float: right;
+}
+.pageviews-placeholder::before {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -25px;
+  top: -2px;
+  content: '';
+  z-index: 100;
+  background: url('../img/eyes.png') no-repeat 50% 50%;
+}
 .special {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2688,6 +2705,7 @@ main.spec {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-height: 400px;
 }
 .ground,
 .fourth {
@@ -2740,9 +2758,13 @@ main.spec {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
-.ground__date {
+.ground__date,
+.ground .pageviews-placeholder {
   font-size: 1em;
   opacity: 0.7;
+}
+.ground .pageviews-placeholder::before {
+  top: 1px;
 }
 .fourth {
   display: -webkit-box;
@@ -2800,7 +2822,8 @@ main.spec {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
-.fourth__date {
+.fourth__date,
+.fourth .pageviews-placeholder {
   font-size: 0.9em;
   opacity: 0.7;
 }
@@ -2832,7 +2855,7 @@ main.spec {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #0b1538;
+  background-color: #2e3234;
   margin-right: 0.5em;
   margin-bottom: 1em;
 }
@@ -2845,15 +2868,11 @@ main.spec {
   max-height: 250px;
   overflow: hidden;
 }
-.trplspec__img {
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
-}
 .trplspec__info {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1em 1em;
-  background-color: #0b1538;
+  background-color: #2e3234;
   color: #ffffff;
 }
 .trplspec__title {
@@ -2862,7 +2881,8 @@ main.spec {
   min-height: 55px;
   overflow: hidden;
 }
-.trplspec__date {
+.trplspec__date,
+.trplspec .pageviews-placeholder {
   font-size: 0.9em;
   opacity: 0.7;
 }
@@ -2878,7 +2898,8 @@ main.spec {
   .fourth__title {
     font-size: 0.9em;
   }
-  .fourth__date {
+  .fourth__date,
+  .fourth .pageviews-placeholder {
     font-size: 0.7em;
   }
 }
@@ -2893,6 +2914,7 @@ main.spec {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    max-height: none;
   }
   .ground,
   .fourth {
@@ -2917,10 +2939,14 @@ main.spec {
   .fourth {
     margin-bottom: 1.5em;
   }
+  .fourth__article {
+    height: 250px;
+  }
   .fourth__title {
     font-size: 1.3em;
   }
-  .fourth__date {
+  .fourth__date,
+  .fourth .pageviews-placeholder {
     font-size: 0.9em;
   }
 }
@@ -2928,7 +2954,8 @@ main.spec {
   .fourth__title {
     font-size: 1.3em;
   }
-  .fourth__date {
+  .fourth__date,
+  .fourth .pageviews-placeholder {
     font-size: 0.9em;
   }
   .fourth__article:nth-of-type(1) {
@@ -2947,7 +2974,8 @@ main.spec {
   .fourth__title {
     font-size: 1.1em;
   }
-  .fourth__date {
+  .fourth__date,
+  .fourth .pageviews-placeholder {
     font-size: 0.7em;
   }
   .trplspec {
@@ -2990,7 +3018,7 @@ main.spec {
   .fourth__article {
     width: 100%;
     margin-bottom: 1.5em;
-    min-height: 250px;
+    height: 250px;
   }
   .fourth__article:nth-of-type(1) {
     margin-bottom: 1.5em;
@@ -3000,7 +3028,8 @@ main.spec {
     font-weight: bold;
     margin-bottom: 1em;
   }
-  .fourth__date {
+  .fourth__date,
+  .fourth .pageviews-placeholder {
     font-size: 1em;
   }
   .fourth__text {
@@ -3011,7 +3040,7 @@ main.spec {
 }
 @media all and (max-width: 480px) {
   .fourth__article {
-    min-height: 200px;
+    height: 250px;
   }
   .fourth__text {
     display: none;
@@ -3019,11 +3048,23 @@ main.spec {
   .fourth__title {
     font-size: 1.5em;
   }
+  .fourth .pageviews-placeholder::before {
+    top: -1px;
+  }
+  .ground__article {
+    height: 250px;
+  }
   .ground__text {
     display: none;
   }
   .ground__title {
     font-size: 1.5em;
+  }
+  .ground .pageviews-placeholder::before {
+    top: 0px;
+  }
+  .trplspec__article {
+    height: 350px;
   }
 }
 
@@ -3035,6 +3076,7 @@ main.spec {
   position: relative;
   overflow: hidden;
   margin-bottom: 1.5em;
+  cursor: pointer;
 }
 .specific__clearfix {
   display: block;
@@ -3098,6 +3140,11 @@ main.spec {
     font-size: 2.5em;
   }
 }
+@media all and (max-width: 980px) {
+  .specific__name {
+    font-size: 2em;
+  }
+}
 @media all and (max-width: 960px) {
   .specific {
     margin-right: 1.5em;
@@ -3106,10 +3153,16 @@ main.spec {
     font-size: 3em;
   }
 }
-@media all and (max-width: 794px) {
+@media all and (max-width: 850px) {
   .specific {
-    margin-right: 0;
+    margin-right: 1.5em;
   }
+  .specific__name {
+    font-size: 2.9em;
+    margin-bottom: 0.3em;
+  }
+}
+@media all and (max-width: 794px) {
   .specific__name {
     font-size: 2.8em;
   }
@@ -3197,6 +3250,7 @@ main {
 .sidebar-right {
   width: 250px;
   position: relative;
+  margin-bottom: 1.5em;
 }
 .sidebar-right .holdIt {
   display: none;
@@ -3508,6 +3562,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 200px;
+  height: 180px;
   position: relative;
   overflow: hidden;
   margin-bottom: 2.5em;
@@ -3617,6 +3672,7 @@ main {
     display: block;
     position: relative;
     width: 100%;
+    height: auto;
     max-width: none;
     overflow: hidden;
     padding: 0.5em;
@@ -3703,6 +3759,9 @@ main {
   .trplArticles__rightBlock:last-of-type > .trplArticles__img {
     max-height: none;
   }
+  .trplArticles__rightBlock {
+    height: 180px;
+  }
   .trplArticles__header {
     font-size: 1.2em;
   }
@@ -3781,6 +3840,7 @@ main {
   .trplArticles__rightBlock:last-of-type {
     display: block;
     width: 100%;
+    height: auto;
     position: relative;
     margin-right: 0;
   }

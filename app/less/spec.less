@@ -6,10 +6,27 @@ main.spec{
 	min-height: 100vh;
 	box-sizing: border-box;
 }
+.pageviews-placeholder{
+	margin-left:40px;
+	position: relative;
+	float:right;
+	&::before{
+		display: block;
+		position: absolute;
+		width:20px;
+		height:20px;
+		left:-25px;
+		top:-2px;
+		content: '';
+		z-index: 100;
+		background:url('../img/eyes.png') no-repeat 50% 50%;
+	}
+}
 .special{
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
+	max-height: 400px;
 }
 .ground, .fourth{
 	box-sizing: border-box;
@@ -56,9 +73,12 @@ main.spec{
 		font-size: 1.2em;
 		margin-bottom: 0.5em;
 	}
-	&__date{
+	&__date, & .pageviews-placeholder{
 		font-size: 1em;
 		opacity: 0.7;
+	}
+	& .pageviews-placeholder::before{
+		top:1px;
 	}
 }
 .fourth{
@@ -99,7 +119,7 @@ main.spec{
 		font-size: 1.2em;
 		margin-bottom: 0.5em;
 	}
-	&__date{
+	&__date, & .pageviews-placeholder{
 		font-size: 0.9em;
 		opacity: 0.7;
 	}
@@ -118,7 +138,7 @@ main.spec{
 		min-width:calc(250px - 1em);
 		overflow:hidden;
 		box-sizing: border-box;
-		background-color:@HeaderColor2;
+		background-color:rgba(46,50,52,1);
 		margin-right:0.5em;
 		margin-bottom:1em;
 		&:hover .trplspec__img{
@@ -130,12 +150,11 @@ main.spec{
 		overflow:hidden;
 	}
 	&__img{
-		filter: brightness(40%);
 	}
 	&__info{
 		box-sizing: border-box;
 		padding:1em 1em;
-		background-color:@HeaderColor2;
+		background-color:rgba(46,50,52,1);
 		color:#ffffff;
 	}
 	&__title{
@@ -144,7 +163,7 @@ main.spec{
 		min-height:55px;
 		overflow:hidden;
 	}
-	&__date{
+	&__date, & .pageviews-placeholder{
 		font-size: 0.9em;
 		opacity: 0.7;
 	}
@@ -164,7 +183,7 @@ main.spec{
 		&__title{
 			font-size: 0.9em;
 		}
-		&__date{
+		&__date, & .pageviews-placeholder{
 			font-size: 0.7em;
 		}
 	}
@@ -173,6 +192,7 @@ main.spec{
 	.special{
 		flex-direction: column;
 		align-items:center;
+		max-height: none;
 	}
 	.ground, .fourth{
 		width:100%;
@@ -191,10 +211,13 @@ main.spec{
 	}
 	.fourth{
 		margin-bottom: 1.5em;
+		&__article{
+			height: 250px;
+		}
 		&__title{
 			font-size: 1.3em;
 		}
-		&__date{
+		&__date, & .pageviews-placeholder{
 			font-size: 0.9em;
 		}
 	}
@@ -205,7 +228,7 @@ main.spec{
 		&__title{
 			font-size: 1.3em;
 		}
-		&__date{
+		&__date, & .pageviews-placeholder{
 			font-size: 0.9em;
 		}
 		&__article:nth-of-type(1){
@@ -223,7 +246,7 @@ main.spec{
 		&__title{
 			font-size: 1.1em;
 		}
-		&__date{
+		&__date, & .pageviews-placeholder{
 			font-size: 0.7em;
 		}
 	}
@@ -245,7 +268,7 @@ main.spec{
 		&__article{
 			width:100%;
 			margin-bottom: 1.5em;
-			min-height: 250px;
+			height: 250px;
 			&:nth-of-type(1){
 				margin-bottom: 1.5em;
 			}
@@ -255,7 +278,7 @@ main.spec{
 			font-weight: bold;
 			margin-bottom: 1em;
 		}
-		&__date{
+		&__date, & .pageviews-placeholder{
 			font-size: 1em;
 		}
 		&__text{
@@ -268,21 +291,35 @@ main.spec{
 @media all and (max-width: 480px){
 	.fourth{
 		&__article{
-			min-height: 200px;
+			height: 250px;
 		}
 		&__text{
 			display: none;
 		}
 		&__title{
 			font-size:1.5em;
+		}
+		& .pageviews-placeholder::before{
+			top:-1px;
 		}
 	}
 	.ground{
+		&__article{
+			height: 250px;
+		}
 		&__text{
 			display: none;
 		}
 		&__title{
 			font-size:1.5em;
+		}
+		& .pageviews-placeholder::before{
+			top:0px;
+		}
+	}
+	.trplspec{
+		&__article{
+			height: 350px;
 		}
 	}
 }

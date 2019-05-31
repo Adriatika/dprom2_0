@@ -6,6 +6,43 @@ main.spec{
 	min-height: 100vh;
 	box-sizing: border-box;
 }
+span.heading_report{
+	color:#a85f82;
+	border:1px solid #a85f82;
+}
+span.heading_interview{
+	color:#cb9d70;
+	border:1px solid #cb9d70;
+}
+span.heading_photo{
+	color:#63a0ae;
+	border:1px solid #63a0ae;
+}
+span.heading_programm{
+	color:#81aa8b;
+	border:1px solid #81aa8b;
+}
+span.heading_anonce{
+	color:#7580a6;
+	border:1px solid #7580a6;
+}
+span.heading_view{
+	color:#1390a6;
+	border:1px solid #1390a6;
+}
+
+.spec_link a{
+	color:#96693d!important;
+}
+.spec_link a:before{
+	background-image:linear-gradient(to top right,#96693d 50%,#0f0f0f 50%)!important;
+}
+.spec_link a:hover{
+	color:#96473d!important;
+}
+.spec_link a:hover:before{
+	background-image:linear-gradient(to top right,#96473d 50%,#0f0f0f 50%)!important;
+}
 .pageviews-placeholder{
 	margin-left:40px;
 	position: relative;
@@ -80,6 +117,13 @@ main.spec{
 	& .pageviews-placeholder::before{
 		top:1px;
 	}
+	&__heading{
+		float:right;
+		font-size: 0.9em;
+		padding:5px 10px;
+		border:1px solid #fff;
+		border-radius: 5px;
+	}
 }
 .fourth{
 	display: flex;
@@ -126,6 +170,13 @@ main.spec{
 	&__text{
 		display: none;
 	}
+	&__heading{
+		float:right;
+		font-size: 0.9em;
+		padding:5px 10px;
+		border:1px solid #fff;
+		border-radius: 5px;
+	}
 }
 .trplspec{
 	display: flex;
@@ -167,6 +218,13 @@ main.spec{
 		font-size: 0.9em;
 		opacity: 0.7;
 	}
+	&__heading{
+		float:right;
+		font-size: 0.9em;
+		padding:3px 7px;
+		border:1px solid #fff;
+		border-radius: 5px;
+	}
 }
 @media all and(max-width:1280px){
 	.fourth{
@@ -175,6 +233,11 @@ main.spec{
 		}
 		&__date{
 			font-size: 0.6em;
+		}
+	
+		&__heading{
+			font-size: 0.7em;
+			padding:3px 7px;
 		}
 	}
 }
@@ -219,6 +282,10 @@ main.spec{
 		}
 		&__date, & .pageviews-placeholder{
 			font-size: 0.9em;
+		}
+		&__heading{
+			font-size: 0.9em;
+			padding:5px 10px;
 		}
 	}
 }

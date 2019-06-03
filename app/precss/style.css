@@ -2882,11 +2882,11 @@ span.heading_view {
 }
 .fourth__heading {
   float: right;
-  font-size: 0.9em;
-  padding: 5px 10px;
+  font-size: 0.7em;
+  padding: 2px 4px;
   border: 1px solid #fff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
 }
 .trplspec {
   display: -webkit-box;
@@ -2947,7 +2947,7 @@ span.heading_view {
 .trplspec__heading {
   float: right;
   font-size: 0.9em;
-  padding: 3px 7px;
+  padding: 2px 4px;
   border: 1px solid #fff;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -3110,6 +3110,12 @@ span.heading_view {
     display: block;
     font-size: 1em;
     margin-bottom: 1em;
+  }
+  .fourth__heading {
+    padding: 2px 4px;
+  }
+  .ground__heading {
+    padding: 2px 4px;
   }
 }
 @media all and (max-width: 480px) {

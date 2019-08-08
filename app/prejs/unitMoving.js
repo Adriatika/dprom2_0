@@ -27,13 +27,17 @@ function invMiranda(){
 		}
 	}
 }
-window.onresize = function(event){
-	var width=document.body.clientWidth;
-	if(width<=960){
-		moveMiranda();
-	}else{
-		invMiranda();
-	}
+ window.onresize = function(event){
+ 	setTimeout(resize, 50, event);
+}
+
+function resize(event){
+ 	var width=document.body.clientWidth;
+ 	if(width<=960){
+ 		moveMiranda();
+ 	}else{
+ 		invMiranda();
+ 	}
 }
 
 $(document).ready(function(){

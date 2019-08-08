@@ -3924,6 +3924,9 @@ main {
   .trplArticles__rightBlock {
     height: 180px;
   }
+  .trplArticles__rightBlock:last-of-type {
+    height: 180px;
+  }
   .trplArticles__header {
     font-size: 1.2em;
   }

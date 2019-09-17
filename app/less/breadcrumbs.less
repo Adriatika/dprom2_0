@@ -3,7 +3,6 @@
 	display: block;
 	width:100%;
 	box-sizing: border-box;
-	border-bottom:1px solid @backSidebarLi;
 	padding-bottom:4px;
 	margin-bottom: 1.5em;
 	clear: both;
@@ -12,7 +11,7 @@
 		vertical-align: middle;
 		margin:0 2px;
 		margin-right:5px;
-		& a{
+		& a.breadcrumbs__link{
 			color:@ArticleDate;
 		}
 	}
@@ -21,6 +20,7 @@
 		position: relative;
 		top: 2px;
 		content:'';
+		color:@ArticleDate;
 		&:after{
 			display: block;
 			content:'/';
@@ -29,9 +29,9 @@
 	&__current{
 		position: relative;
 		display:inline;
-		color:darken(@ArticleDate, 50%);
-		padding-top: 4px;
-		top: 3px;
+		color:@ArticleDate;
+		padding-top:0px;
+		top:2px;
 		
 	}
 }

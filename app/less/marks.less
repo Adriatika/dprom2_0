@@ -1,0 +1,70 @@
+@import "vars.less";
+.singleArticle .marks{
+    padding: 0;
+    &__link{
+        padding: 0;
+    }
+}
+.marks{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    list-style: none;
+    color: @downAnchor; 
+    margin: 0.5em 0 0 0;
+    max-width: 730px;
+    
+    &__text{
+        display: flex;
+        padding: 0.1em 0.2em ;
+        color:@downAnchor;
+        margin-right: 0.5em;
+        font-size: 1.2em;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    &__link {
+        
+        & a{
+        
+        display: flex;
+        padding: 0.1em 0.4em;
+        color:@downAnchor;
+        
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        font-weight: bold;}
+        
+        
+        & a:link {
+            color: @downAnchor; 
+        }
+        & a:visited {
+        color: @downAnchor; 
+        }
+    }
+     
+}
+@media all and(max-width: 576px){
+	.marks{
+        &__link{
+            
+            margin: 0 0.5em 0.5em 0;
+        }
+	}
+}
+@media all and(min-width: 577px){
+    .singleArticle{
+	& .marks{
+        &__link{
+            & a:hover{
+            color: @menuAColorHover;
+            transition: .1s;
+            }
+        }
+	}
+    }}

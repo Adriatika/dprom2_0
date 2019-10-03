@@ -1,0 +1,18 @@
+@import "vars.less";
+#my_loader{
+	background-color: #ddd; /* сервый фон */
+    	
+    	display: block; /* блочный элемент, на случай, если захотите использовать <a> */
+    	text-align: center; /* выравнивание текста по центру */
+    	font-size: 14px; font-size: 0.875rem; /* размер шрифта */
+    	font-weight: 800; /* начертание */
+    	letter-spacing: 1px; /* межбуквенный интервал */
+    	cursor: pointer; /* курсор мыши при наведении такой же, как при наведении на ссылку */
+    	text-transform: uppercase;
+    	padding: 10px 0; /* внутренние отступы сверху и снизу у кнопки */
+    	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out; /* CSS-анимация*/
+    &:hover{
+	background-color: #767676;
+	color: #fff;
+}
+}

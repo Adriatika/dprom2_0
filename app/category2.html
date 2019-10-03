@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dprom.online</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fontStyle.css">
+	<script src="jQuery/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+		<div class="wrapper">
+		<header class="dpHeader">
+			<div class="headerFirstPart">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/dprom_online.png" alt="Журнал Добывающая промышленность">
+					</a>
+				</div>
+				<div class="infoBlock">
+					<div class="tie">
+						<span class="tie__phone">
+							<svg class="tie__icon">
+								<use xlink:href="svgsprite.svg#num"></use>
+							</svg>
+							+7 (391) 237 - 15 - 37
+						</span>
+						<div class="formWrapper">
+							<input type="checkbox" id="formVision" class="tie__formVision">
+							<form id="searchform" role="search" method="get" class="tie__search">
+								<input type="text" id="searchText" class="tie__searchText"  tabindex="1" placeholder="поиск">
+								<button id="searchsubmit" class="searchSubmit">
+									<svg class="searchSubmit__icon">
+									<use xlink:href="svgsprite.svg#searchIcon"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="menu">
+						<label for="menuCheck" class="menu__label">
+							<svg>
+								<use xlink:href="svgsprite.svg#burgerMenu"></use>
+							</svg>
+						</label>
+						<input type="checkbox" class="menu__check" id="menuCheck">
+						<ul class="heading">
+							<li class="current-menu-item"><a href="#">Главная</a></li>
+							<li><a href="taxonomy-series.html">Архив</a></li>
+							<li><a href="#">О проекте</a></li>
+							<li><a href="#">Мероприятия</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="categoryMenu">
+					<input type="checkbox" id="lop" name="menuCheck">
+					<label for="lop">
+						<svg class="categoryMenu__svg">
+							<use xlink:href="svgsprite.svg#burgerMenu2"></use>
+						</svg>
+					</label>
+					<ul class="categoryMenu__list">
+						<li><a href="#">Золото</a></li>
+						<li><a href="#">Уголь</a></li>
+						<li><a href="#">Транспорт</a></li>
+						<li><a href="#">Металлы и руды</a></li>
+						<li><a href="#">Химия</a></li>
+						<li><a href="#">Инфо</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Нефтегаз</a></li>
+						<li><a href="#">Разведка</a></li>
+						<li><a href="#">Произвольная страница</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="table">
+			<div class="middle-block">
+				<div class="sidebar-left">
+					<div class="events">
+						<h3 class="events__header">Мероприятия</h3>
+						<table class="events__table">
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name">
+									<a href="#">International Mine Water Association Conference 2019, Пермь</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«МАЙНЕКС Дальний Восток», г. Магадан</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«ГеоЕвразия-2019», Москва</a></td>
+							</tr>
+							<tr class="events__row">
+								<td class="events__date">04.02.2019 07.02.2019</td>
+								<td class="events__name"><a href="#">«ГеоЕвразия-2019», Москва</a></td>
+							</tr>
+						</table>
+					</div>
+					<div class="newMagazine">
+						<h3 class="widget-title">Свежий номер</h3>
+						<a href="#">
+							<img src="https://picsum.photos/250/400/?random=3" alt="">
+						</a>
+						<a href="#">Версия online</a>
+						<a href="#">Скачать</a>
+					</div>
+				</div>
+				<main>
+					<div class="breadcrumbs">
+						<span><a href="#">Главная</a></span>
+						<span class="breadcrumbs__separator"></span>
+						<span><a href="#">Новости</a></span>
+						<span class="breadcrumbs__separator"></span>
+						<span class="breadcrumbs__current">Металлы и руды</span>
+					</div>
+					<div class="cake">
+						<a href="#" class="cake__link">
+							<div class="cake__imgWrap">
+								<img src="https://picsum.photos/800/400/?random=2" alt="" class="cake__img">
+							</div>
+							<div class="cake__info">
+								<h3 class="cake__title">Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+								<div class="cake__data">
+									<span class="cake__date">
+										12.12.2018
+									</span>
+									<span class="cake__caty">
+										Фоторепортаж
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="cake__link">
+							<div class="cake__imgWrap">
+								<img src="https://picsum.photos/640/300/?random=1" alt="" class="cake__img">
+							</div>
+							<div class="cake__info">
+								<h3 class="cake__title">Lorem ipsum dolor sit amet, consectetur. Далеко-далеко за словесными. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloremque nisi distinctio non consectetur accusantium rem dolore, quas explicabo omnis.</h3>
+								<div class="cake__data">
+									<span class="cake__date">
+										31.02.2018
+									</span>
+									<span class="cake__caty">
+										Деловая программа
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="cake__link">
+							<div class="cake__imgWrap">
+								<img src="https://picsum.photos/640/300/?random" alt="" class="cake__img">
+						</div>
+							<div class="cake__info">
+								<h3 class="cake__title">Lorem ipsum dolor sit amet, consectetur. Далеко-далеко за словесными.</h3>
+								<div class="cake__data">
+									<span class="cake__date">
+										31.02.2018
+									</span>
+									<span class="cake__caty">
+										Деловая программа
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="cake__link">
+							<div class="cake__imgWrap">
+								<img src="https://picsum.photos/320/200/?random" alt="" class="cake__img">
+							</div>
+							<div class="cake__info">
+								<h3 class="cake__title">Lorem ipsum dolor sit amet, consectetur. Далеко-далеко за словесными.</h3>
+								<div class="cake__data">
+									<span class="cake__date">
+										31.02.2018
+									</span>
+									<span class="cake__caty">
+										Деловая программа
+									</span>
+								</div>
+							</div>
+						</a>
+
+						<a href="#" class="cake__link">
+							<div class="cake__imgWrap">
+								<img src="https://picsum.photos/320/200/?random" alt="" class="cake__img">
+							</div>
+							<div class="cake__info">
+								<h3 class="cake__title">Lorem ipsum dolor sit amet, consectetur. Далеко-далеко за словесными.</h3>
+								<div class="cake__data">
+									<span class="cake__date">
+										31.02.2018
+									</span>
+									<span class="cake__caty">
+										Деловая программа
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</main>
+				<div class="sidebar-right">
+					<div class="foxy">
+						<a href="#">
+							<img src="https://picsum.photos/250/400/?random" alt="">
+						</a>
+					</div><div class="foxy">
+						<a href="#">
+							<img src="https://picsum.photos/250/400/?random" alt="">
+						</a>
+					</div>
+					<div class="holdIt"></div>
+					<div class="widget_categories">
+						<h3 class="widgettitle sidebar_title">
+							Список категорий
+						</h3>
+						<ul>
+							<li class="cat-item current-cat"><a href="#">Техника</a></li>
+							<li class="cat-item"><a href="#">Нефть</a></li>
+							<li class="cat-item"><a href="search.html">Металлы и руды</a></li>
+							<li class="cat-item"><a href="#">Разведка</a></li>
+							<li class="cat-item"><a href="#">Химия</a></li>
+							<li class="cat-item"><a href="#">Минералы</a></li>
+							<li class="cat-item"><a href="#">Уголь</a></li>
+							<li class="cat-item"><a href="#">Нефтегаз</a></li>
+						</ul>
+					</div>
+					<div class="holdIt"></div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="" class="image">
+						</a>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="" class="image">
+						</a>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="" class="image">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="hrBnr">
+						<a href="#" class="hrBnr__anchor">
+							<img src="https://picsum.photos/800/150/?random" alt="myImg" class="hrBnr__img">
+						</a>
+					</div>
+		</div>
+		<div class="archive">
+			<section class="archive__wrapper">
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag13.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag11.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag1.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag3.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag4.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag5.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag6.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag7.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="img/mag8.jpg" alt="" class="archive__img">
+					</a>
+				</div>
+				<div class="archive__item">
+					<a href="#" class="archive__link">
+						<img src="https://picsum.photos/300/400/?random" alt="" class="archive__img">
+					</a>
+				</div>
+			</section>
+		</div>
+		<div class="sector2">
+			<div class="sector2row">
+				<div class="bottomSidebarLeft">
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="tileWrapper">
+					<div class="tileNews">
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>	
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>	
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>	
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>	
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>	
+						<div class="tileNews__item">
+							<a href="#" class="tileNews__info">
+								<img src="https://picsum.photos/300/200/?random" alt="" class="tileNews__img">
+								<span class="tileNews__title">Lorem ipsum dolor sit amet, consectetur. Shvah!</span>
+							</a>
+							<a href="#" class="tileNews__heading">Металлы и руды</a>
+						</div>		
+					</div>
+				</div>
+				<div class="bottomSidebarRight">
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="">
+						</a>
+					</div>
+					<div class="widget_media_image">
+						<a href="#">
+							<img src="https://picsum.photos/250/125/?random" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="dpFooter">
+		<div class="wrapper">
+			<div class="interactive">
+				<a href="#" class="interactive__sbscr">Подписаться</a>
+				<div class="interactive__social">
+					<span class="interactive__text">Мы в социальных сетях</span>
+					<ul class="interactive__list">
+						<li><a href="#">Вконтакте</a></li>
+						<li><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+				<div class="interactive__list">
+					<span class="interactive__text">Правила</span>
+					<ul class="interactive__list">
+						<li>
+							<a href="#">Обработка данных</a>
+						</li>
+						<li>
+							<a href="#">Пользовательское соглашение</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<span class="copyright__title">&copy; ООО "ПромоГрупп Медиа", 2016-2019</span>
+				<span class="copyright__text">
+					Копирование материалов запрещено.
+				</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

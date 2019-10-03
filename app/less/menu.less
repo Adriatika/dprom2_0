@@ -1,7 +1,9 @@
 @import "vars.less";
 .menu{
+	display: block;
 	width: 100%;
 	box-sizing: border-box;
+	margin:0 0 0.5em;
 	&__check{
 		display: none;
 	}
@@ -14,6 +16,7 @@
 	list-style: none;
 	position: relative;
 	margin-right: 1.5em;
+	margin-bottom: 1em;
 	border-bottom: 2px solid transparent;
 	& .sub-menu{
 		display:none;
@@ -56,7 +59,7 @@
 	// 		}
 	&>a{
 		display: inline-block;
-		padding: 0.7em 0.3em 0.2em;
+		padding: 0.1em 0.3em 0.2em;
 		text-transform: lowercase;
 		color:@menuAColor;
 		&:hover{
@@ -67,21 +70,29 @@
 	&.current-menu-item{
 		border-bottom: 2px solid @menuAColorHover;
 	}
+	
 }
+ li.profi{
+		border:1px solid #96473d;
+		background-color: #96473d;
+		&>a{color:#ffffff;}
+		&>a:hover{
+			color:rgba(255,255,255,0.8);
+		}
+	}
 @media all and(max-width: 1366px){
 	.heading li a{
-		padding:0;
+		padding:0.1em 0.3em 0.2em;
 	}
 }
 @media all and(max-width: 960px){
 	.menu{
 		float: right;
-		text-align: right;
 		max-width:100%;
 	}
 	.heading li{
-		margin-right:0;
-		margin-left:5%;
+		margin-right:5%;
+		margin-left:0%;
 		&:first-of-type{
 			margin-left:0;
 		}
@@ -92,13 +103,16 @@
 		display: block;
 		float: none;
 		clear: both;
-		text-align: center;
+	}
+	.heading li{
+		margin-left:0;
+		margin-right: 5%;
 	}
 }
 @media all and(max-width:576px){
 	.menu{
 		& li{
-			&:last-of-type{
+			&:nth-of-type(5){
 				display: none;
 			}
 		}

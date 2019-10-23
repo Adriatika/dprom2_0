@@ -38,8 +38,6 @@ var li1 	 = document.querySelector('.sm1'),
 		close 	= document.querySelector("#ppCl"),
 		popupW 	= document.querySelector(".popupWrapper"),
 		popupF 	= document.querySelector("#ppForm");
-
-			console.log(typeof(formD)) ; 
 		upFrom.onclick = function(e){
 			e.preventDefault();
 			var formD	= document.querySelector("#sp-form-118170");

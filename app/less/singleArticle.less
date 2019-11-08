@@ -34,6 +34,15 @@
 		line-height: 1.5em;
 		color:@headersColor;
 		margin-bottom: 2em;
+		&>a{
+			border-bottom: 2px solid @HeaderColor2;
+		}
+		&>a:visited{
+			border-bottom: 2px solid @mainColor;
+		}
+		&>a:hover{
+			border-bottom: 2px solid @HeaderColor3;
+		}
 	}
 	& hr{
 		margin-bottom: 1em;
@@ -233,6 +242,9 @@
 		}
 		& blockquote figure.alignleft{
 			padding-left:0;
+		}
+		p.has-background{
+			padding:20px 10px!important;
 		}
 	}
 }

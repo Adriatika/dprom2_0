@@ -2278,6 +2278,7 @@ li.profi > a:hover {
 @media all and (max-width: 576px) {
   .news__title {
     font-size: 2em;
+    margin-bottom: 0.3em;
   }
 }
 
@@ -2658,6 +2659,15 @@ main > p a:hover {
   color: #3f4e55;
   margin-bottom: 2em;
 }
+.singleArticle p > a {
+  border-bottom: 2px solid #0b1538;
+}
+.singleArticle p > a:visited {
+  border-bottom: 2px solid #96693d;
+}
+.singleArticle p > a:hover {
+  border-bottom: 2px solid #1d2953;
+}
 .singleArticle hr {
   margin-bottom: 1em;
 }
@@ -2874,6 +2884,9 @@ main > p a:hover {
   }
   .singleArticle blockquote figure.alignleft {
     padding-left: 0;
+  }
+  .singleArticle p.has-background {
+    padding: 20px 10px!important;
   }
 }
 @media all and (max-width: 480px) {

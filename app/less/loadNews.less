@@ -17,7 +17,7 @@
 		margin-bottom:1.5em;
 		background-color:@backSidebarLi;
 		&:hover img{
-			filter:grayscale(0.78);
+			filter:grayscale(0);
 		}
 		&:hover > span{
 			color:@footerBack;
@@ -39,6 +39,7 @@
 	}
 	&__img{
 		width:100%;
+		filter:grayscale(0.78);
 	}
 }
 @media all and(max-width:1080px){
@@ -67,6 +68,9 @@
 		&__imgWrap{
 			height: auto;
 		}
+		&__img{
+			filter:grayscale(0);
+		}
 		&__title{
 			font-size: 1.4em;
 		}
@@ -80,11 +84,4 @@
 			margin-right:auto;
 		}
 	}
-	
-}
-@media all and(max-width: 568px){
-	
-}
-@media all and(max-width:480px){
-	
 }

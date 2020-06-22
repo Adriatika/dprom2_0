@@ -3,18 +3,7 @@
 main.newYear{
 	max-width:none;
 	width: 100%;
-}
-.wrapperNewYear{
-	background-color: #ffffff;
-}
-.newYearBody{
-	background:url(../img/snow4.png) 0 30px repeat;
-	background-size: 50%;
-	
-}
-.footerNewYear{
-	background: #0f0f0f url(../img/snow3.png) 0 0 repeat;
-
+	background-color:rgba(255,255,255,0.8);
 }
 .congrats{
 	&__item{
@@ -23,17 +12,21 @@ main.newYear{
 		max-width:100%;
 		box-sizing:border-box;
 		padding: 1em;
-		margin-bottom:10.5em;
+		margin-bottom:7.5em;
 		clear: both;
+		background-color: #ffffff;
+			box-shadow: 0 0 10px 10px rgba(225,225,225,0.4);	
 		&:nth-of-type(odd) div{
 			order:0;
+		}
+		&:nth-of-type(odd) .congrats__btn{
+			align-self: flex-start;
 		}
 		&:nth-of-type(even) div{
 			order:2;
 		}
 		&:hover{
-			box-shadow: 0 0 10px 10px rgba(225,225,225,0.8);
-			
+			box-shadow: 0 0 10px 10px rgba(225,225,225,0.6);
 		}
 	}
 
@@ -41,23 +34,58 @@ main.newYear{
 		display:flex;
 		flex-direction: row;
 		justify-content: space-between;
-		margin-bottom: 1em;
-		font-size: 40px;
-		line-height:55px;	
-		color:@menuAColor;
+		margin-bottom:1em;
+		font-size:30px;
+		line-height:45px;	
+		color:lighten(@menuAColor, 10%);
 	}
-	&__img{
+	&__imgWrap{
 		display: flex;
-		flex-grow:3;
-		min-width:250px;
+		content:'';
+		width:50%;
+		flex-grow: 3;
 		border-radius:10px;
 	}
 	&__text{
 		padding:0 1.5em;
-		text-align: center;
 		display:flex;
+		width:50%;
+		justify-content:space-around;
 		flex-direction: column;
 		flex-grow: 1;
+	}
+	&__speech{
+		display: block;
+		padding:1.5em 0;
+		position: relative;
+		z-index:10;
+		&::after, &::before{
+			display: block;
+			content: '';
+			width:10%;
+			height:10%;
+			position:absolute;
+			background:#ffffff url('../img/1634527.png') 50% 50% no-repeat;
+			background-size: contain;
+			z-index: 1;
+			opacity:0.2;
+		}
+		&::after{
+			top:90%;
+			left:80%;
+		}
+		&::before{
+			top:1%;
+			left:0%;
+			transform: rotate(180deg);
+		}
+
+	}
+	&__who{
+		font-size: 0.5em;
+		line-height: 1.2em;
+		font-style: italic;
+		margin-bottom: 1.5em;
 	}
 	&__btn{
 		display: flex;
@@ -68,10 +96,106 @@ main.newYear{
 		color:#ffffff;
 		box-sizing:border-box;
 		background-color: #96473d;
-		margin-top: auto;
+		margin-top: 1em;
 		&:hover{
 			background-color: darken(#96473d, 20%);
 		}
 	}
+}
+@media all and(max-width:1366px){
+	.congrats{
+		&__link{
+			font-size:35px;
+		}
+	}
+}
+@media all and(max-width:1280px){
+	.congrats{
+		&__link{
+			font-size:30px;
+		}
+	}
+}
+@media all and(max-width:1140px){
+	.congrats{
+		&__item{
+			&:nth-of-type(odd) .congrats__btn{
+			align-self: center;
+			}
+		}
+		&__btn{
+			align-self: center;
+		}
+		&__link{
+			line-height:40px;
+			font-size: 25px;
+		}
+	}
+}
+@media all and(max-width:980px){
+	.congrats{
+		&__item{
+			&:nth-of-type(even) div{
+				order: 0;
+			}
+			&:nth-of-type(odd) div{
+				order:0;
+			}
+		}
+		&__imgWrap{
+			width:80%;
+			padding-top:60%;
+			min-width: none;
+			margin:0 auto 1.5em;
+		}
+		&__link{
+			flex-direction: column;
+			font-size:30px;
+		}
+		&__text{
+			width:100%;
+			max-width: 100%;
+			box-sizing: border-box;
+		}
+	}
+}
+@media all and(max-width:640px){
+	.congrats{
+		&__item{
+			position: relative;
+			overflow: hidden;
+			&:nth-of-type(even) div{
+				order: 0;
+			}
+			&:nth-of-type(odd) div{
+				order:0;
+			}
+		}
+		&__img{
+			max-width:150px;
+			width:150px;
+			min-width: none;
+			overflow:hidden;
+			margin:0 auto 1.5em;
+		}
+		&__link{
+			flex-direction: column;
+			font-size:25px;
+		}
+	}
+}
 
+@media all and(max-width:480px){
+	.congrats{
+		&__imgWrap{
+			width:95%;
+			padding-top: 70%;
+		}
+		&__who{
+			text-align: center;
+		}
+		&__text{
+			padding:0 0.7em;
+		}
+	}
 }

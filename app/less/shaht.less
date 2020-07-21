@@ -1,0 +1,235 @@
+@import "vars.less";
+main.spec2{
+	width: 100%;
+	max-width: 100%;
+}
+.shaht-row{
+	display:flex;
+	flex-direction: row;
+	box-sizing:border-box;
+	justify-content:space-between;
+	max-width:100%;
+	width:100%;
+	margin-bottom:2.5em;
+}
+.slick-slide{
+	border:none;
+	outline: none;
+}
+.shtr{
+}
+.shaht-slider{
+	max-width: 900px;
+	width: 100%;
+	box-sizing: border-box;
+	& .slick-dots li button:before{
+		color:  rgba(203,169,136,1);
+	}
+	& .slick-dots li button:hover, .slick-dots li button:focus, .slick-dots li button:active {
+
+		color:  rgba(203,169,136,1);
+	}
+}
+.shaht-adv{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	box-sizing:border-box;
+	margin-bottom: 1.5em;
+	&>*{
+		width:250px;
+	}
+}
+.shaht{
+	box-sizing: border-box;
+	padding-right: 1.5em;
+	width:calc(100% - 250px);
+	margin-bottom: 3.5em;
+	& .slick-arrow{
+		height:calc(100% - 1px);
+		background-color: rgba(203,169,136,1);
+	}
+	& .slick-next:before{
+		content: "▶";
+	}
+	& .slick-prev:before{
+		content: "◀";
+	}
+	& .slick-arrow:focus,
+	& .slick-arrow:hover{
+		background-color: rgba(203,169,136,1);
+	}
+	& .slick-prev{
+		left: 0;
+		z-index: 120;
+	}
+	& .slick-next{
+		right: 0;
+		z-index: 120;
+	}
+}
+.shaht-slide{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	padding:1.5em 0;
+	background-image: linear-gradient(to bottom right, rgba(203,169,136,0.5) 60%, rgba(221, 221, 221,0.1) 60%);
+	& img{
+		width:250px;
+		height:333px;
+		box-shadow: -15px -15px 0px 0px darken(@menuAColorHover, 20%);
+	}
+	& p{
+		box-sizing:border-box;
+		padding-right:1.5em;
+		padding-left:10px;
+		border-left:2px solid darken(@menuAColorHover, 20%);
+		max-width:300px;
+		font-size:18px;
+		line-height:25px;
+	}
+}
+.hr-shaht{
+	display: block;
+	width:100%;
+	box-sizing: border-box;
+	&>a{
+		width:100%;
+		max-width: 100%;
+		&>img{
+			width: 100%;
+		}
+	}
+}
+.shaht-tile{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	width:100%;
+	
+	box-sizing:border-box;
+}
+.shaht-post{
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: flex-start;
+	width:calc(30% - 1.5em);
+	margin-bottom: 3.5em;
+	&:nth-of-type(3n+2){
+		margin:0 1.5em;
+	}
+}
+.shaht-post__img{
+		width:100%;
+		position: relative;
+		padding-top:65.6%;
+		margin-bottom: 1.5em;
+		border-bottom:5px solid darken(@menuAColorHover, 20%);
+		overflow:hidden;
+		&>a{
+			position: absolute;
+			top:0;
+			left:0;
+			&>.shaht-post__deco{
+				width:100%;
+				height:100%;
+				background-color: @backLiHover;
+				display:flex;
+				position: absolute;
+				top:100%;
+				left:0;
+				transition: 0.4s;
+				justify-content: center;
+				align-items: center;
+				& svg{
+					width:40px;
+					height:40px;
+				}
+			}
+		}
+		&:hover>a>.shaht-post__deco{
+			top:0;
+		}
+}
+.shaht-post__title h3{
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	color:darken(@menuAColorHover, 20%);
+	margin-bottom: 1.5em;
+	&:hover{
+		color:@menuAColorHover;
+	}
+}
+.shaht-post__excerpt{
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom:1em;
+}
+.shaht-post__link{
+	color:@menuAColorHover;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	&:hover{
+		color:darken(@menuAColorHover, 20%);
+	}
+}
+@media all and(max-width:956px){
+ .shaht-slide p{
+		font-size: 16px;
+ }
+ .shaht-row{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.shaht{
+		padding-right:0;
+		width:100%;
+	}
+	.shaht-post{
+		width:calc(50% - 1.5em);
+		&:nth-of-type(3n+2){
+		margin:0 0 1.5em 0;
+	}
+	}
+	.shaht-post__img>a{
+			display: block;
+			width:100%;
+			&>img{
+				width: 100%;
+			}
+	}
+}
+@media all and(max-width:768px){
+	.shaht-row{
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.shaht{
+		padding-right:0;
+		width:100%;
+	}
+	.shaht-slide{
+		flex-direction:column;
+		padding:1.5em 0;
+		background-image: linear-gradient(to bottom right, rgba(221, 221, 221,0.1) 80%,  rgba(203,169,136,0.3)90%);
+		& p{
+			border-left:none;
+			border-top:2px solid black;
+			padding-top:15px;
+			text-align: center;
+			order:2;
+		}
+		& img{
+			margin-bottom:1.5em;
+		}
+	}
+	.shaht-post{
+		width:100%;
+	}
+}

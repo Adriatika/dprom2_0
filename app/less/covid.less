@@ -1,0 +1,165 @@
+.tinaWell__wrapper {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+.tinaWell,
+.tinaWell__description {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.tinaWell {
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url(../static/back3.jpeg) no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 20em;
+    -webkit-filter: sepia(75%);
+    filter: sepia(75%);
+    width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.tinaWell__description {
+    position: absolute;
+    width: 50%;
+    padding: 2.5em;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #d3b69a;
+    top: 2em;
+    right: 0;
+}
+.tinaWell__title {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.tinaWell__desc {
+    margin-bottom: 0.5em;
+}
+.tinaWell__spec {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: #96693d;
+    color: #fff;
+}
+.cWrap {
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.stona,
+.stona__wrap {
+    position: relative;
+    overflow: hidden;
+}
+.stona {
+    width: calc(50% - 1em);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+}
+.stona::after {
+    display: block;
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    background-color: #623a17;
+}
+.stona:hover::after {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    width: 100%;
+    left: 0;
+}
+.stona__wrap {
+    padding-top: 56.5%;
+    margin-bottom: 0.3em;
+}
+.stona__wrap > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.stona__info {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 10px 0;
+    color: #0f0f0f;
+}
+.stona__title {
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+}
+.singleArticle blockquote p,
+.stona__desc {
+    font-size: 1em;
+}
+@media all and (max-width: 767.99px) {
+    .tinaWell__title {
+        font-size: 1.5em;
+    }
+    .stona {
+        width: 100%;
+        max-width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .stona::after {
+        width: 100%;
+        left: 0;
+    }
+    .cWrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .tinaWell__spec {
+        font-size: 0.7em;
+    }
+}

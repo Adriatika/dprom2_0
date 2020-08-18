@@ -12,6 +12,76 @@
 	<link rel="stylesheet" href="slick.css">
 </head>
 <body>
+	<div class="dayOfMining">
+		<style>
+			.dfm__link{
+				display: block;
+				height:150px;
+				width:100%;
+				box-sizing: border-box;
+				max-width: 100%;
+				overflow: hidden;
+				position: relative;
+				background: url(img/of1.jpg) no-repeat 0% 0%;
+				background-size: cover;
+				transition: 0.5s;
+			}
+			.dfm__img{
+				display:block;
+				position: absolute;
+				top:0;
+				right:0;
+				content: '';
+				background: url(img/of.jpg) no-repeat 100% 0;
+				width:100%;
+				height:150px;
+				z-index: 50;
+			}
+			.dfm__plhdl{
+				display: block;
+				position: relative;
+				z-index: 100;
+			}
+			.dfm__plhdl::before{
+				display: block;
+				position: absolute;
+				width:150%;
+				height:150px;
+				content:'';
+				top: 0;
+				left: 0;
+				z-index: 70;
+				background-image:linear-gradient(to right, rgba(0,0,0,0.7) 60%, rgba(0,0,0,.3) 70%, rgba(0,0,0,.1) 90%);
+				transition: 0.5s;
+			}
+			/*.dfm__link:hover .dfm__plhdl::before{
+				left:-10%;
+			}*/
+			.dfm__link p{
+				color:rgba(255,255,255,0.9);
+				position: relative; 
+				left:14%;
+				z-index: 150;
+				display: block;
+				padding:1em 0;
+				box-sizing: border-box;
+				margin: 0 auto;
+				font-size:40px;
+				font-weight:bold;
+			}
+			@media all and(max-width: 576px){
+				.dfm__link p{
+					font-size: 10px;
+				}
+			}
+		</style>
+		<a href="#" class="dfm__link" target="_blank">
+			<div class="dfm__plhdl">
+				<p>День Шахтёра 2020</p>
+			</div>
+			<div  class="dfm__img"></div>
+		</a>
+	</div>
 		<div class="darkMenu">
 			<div class="wrapper">
 				<ul class="darkList">

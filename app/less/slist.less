@@ -1,0 +1,46 @@
+@import "vars.less";
+.slist{
+	display: block;
+	width:100%;
+	box-sizing: border-box;
+	border:1px solid @backSidebarLi;
+	border-radius: 5px;
+	margin-bottom: 1.5em;
+	&__desc{
+		display: block;
+		font-family:'Roboto', sans-serif;
+		font-size:30px;
+		font-weight:bold;
+		padding-left: 20px;
+		padding-top:30px;
+	}
+	& ul{
+		display: block;
+		box-sizing: border-box;
+		list-style: none;
+		max-width: 100%;
+		padding-left:45px;
+		& a{
+			color:darken(@menuAColorHover, 40%);
+			transition: 0.3s;
+			&:hover{
+				color:@menuAColorHover;
+			}
+			&::before{
+				display: block;
+				position: absolute;
+				width: 15px;
+				height: 15px;
+				content: '';
+				background: url('https://dprom.online/wp-content/uploads/2020/08/favicon2.png')no-repeat 50% 50%;
+				left:-15px;
+				top:8px;
+			}
+		}
+		& li{
+			margin-bottom: 1em;
+			position: relative;
+		}
+
+	}
+}

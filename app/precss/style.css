@@ -4098,6 +4098,56 @@ main.spec2 {
   }
 }
 
+.slist {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(203, 169, 136, 0.3);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+.slist__desc {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.slist ul {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  max-width: 100%;
+  padding-left: 45px;
+}
+.slist ul a {
+  color: #050302;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.slist ul a:hover {
+  color: #96693d;
+}
+.slist ul a::before {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  content: '';
+  background: url('https://dprom.online/wp-content/uploads/2020/08/favicon2.png') no-repeat 50% 50%;
+  left: -15px;
+  top: 8px;
+}
+.slist ul li {
+  margin-bottom: 1em;
+  position: relative;
+}
+
 main.spec {
   display: block;
   width: 100%;
